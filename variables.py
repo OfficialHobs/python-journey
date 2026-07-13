@@ -53,8 +53,8 @@
 
 #another method from str to int. //note you cannot convert str to int straight up
 #you need to convert  str' to 'float' first then 'int'
-num4='10.23'
-num_int= float(num4)
-num_float= int(num_int)
-print (num_float)
+# num4='10.23'
+# num_int= float(num4)
+# num_float= int(num_int)
+# print (num_float)
 
