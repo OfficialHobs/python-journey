@@ -1,0 +1,11 @@
+
+for n in range(1):
+
+    # Ask the user to enter a number and convert it to a float
+    numbers = int(input("Enter Number: "))
+    if numbers % 2 == 0:
+        print("You entered an even number", numbers)
+    elif numbers % 2 == 1: 
+         print("You entered an odd number", numbers)
+    else:
+        exit()
