@@ -17,11 +17,11 @@ row_count = len(buttons_values)  # how many rows are there = 5 rows
 # column - count the number of item on first row
 column_count = len(buttons_values[0])
 
-color_light_blue = "#205b7a"
-color_sky_blue = "#a2bbcf"
-color_navy_blue = "#142f44"
-color_Ash_blue = "#1d3849"
-color_black = "#000000"
+color_ash = "#D4D4D2"
+color_white = "white"
+color_orange = "#FF9500"
+color_grey = "#505050"
+color_black = "#1C1C1C"
 
 # creating a window/interface
 windows = tkinter.Tk()
@@ -30,7 +30,8 @@ windows.resizable(False, False)  # (width=false, height=false)
 
 frame = tkinter.Frame(windows)  # we are put a frame inside the (windows area)
 label = tkinter.Label(frame, text="0", font=("Arial", 45), background=color_black,
-                      foreground=color_sky_blue)  # insert label into frame and other properties
+                      # insert label into frame and other properties
+                      foreground=color_white, anchor="e")
 label.grid(row=0, column=0, columnspan=column_count,
            sticky="we")  # "we"==west side
 
@@ -49,7 +50,26 @@ for row in range(row_count):  # for each item in row count// for each list in ro
                                 command=lambda value=value: button_clicked(value))
         button.grid(row=row+1, column=column)
 
+        if value in top_symbols:
+            button.config(foreground=color_black, background=color_ash)
+        elif value in right_symbols:
+            button.config(foreground=color_white, background=color_orange)
+        else:
+            button.config(foreground=color_white, background=color_grey)
+
 frame.pack()  # pack all items to fit a size
+
+# center our app window to screen
+windows.update()
+windows_width = windows.winfo_width()
+windows_height = windows.winfo_height()
+screen_width = windows.winfo_screenwidth()
+screen_height = windows.winfo_screenheight()
+
+windows_x = int((screen_width/2)-(windows_width/2))
+windows_y = int((screen_height/2)-(windows_height/2))
+
+windows.geometry(f"{windows_width}x{windows_height}+{windows_x}+{windows_y}")
 
 
 windows.mainloop()  # keep windows running as program runs
