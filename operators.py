@@ -46,14 +46,14 @@
 #Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)
 # calculating the slope of a line and the euclidean distance
 
-# x1, y1, x2, y2 = 2,2,6,10
-# slope = (y2-y1) / (x2-x1)
-# euclidean = (x2-x1) + (y2-y1)
-# print (slope)
-# print (euclidean)
+x1, y1, x2, y2 = 2,2,6,10
+slope1 = (y2-y1) / (x2-x1)
+euclidean = (x2-x1) + (y2-y1)
+print (slope1)
+print (euclidean)
 
-#Calculate the slope, x-intercept and y-intercept of y = 2x -2
-#slope == y = mx+b
+# Calculate the slope, x-intercept and y-intercept of y = 2x -2
+# slope == y = mx+b
 
 b= -2
 m = 2
@@ -64,3 +64,11 @@ x_intercept = -b / m
 print (x_intercept)
 print (y_intercept)
 print (slope)
+
+
+
+#ccomparwe slope 8 and 9
+if slope > slope1:
+    print('slope is bigger: ', slope)
+else:
+    print("slpoe1 is bigger: ", slope1)    
