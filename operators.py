@@ -128,3 +128,4 @@
 Yrs = int(input("enter your age: "))
 TotalSecs = Yrs*365*24*60*60
 print(TotalSecs)
+print(TotalSecs)
