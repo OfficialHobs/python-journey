@@ -125,7 +125,15 @@
 
 # Write a script that prompts the user to enter number of years. 
 # Calculate the number of seconds a person can live. Assume a person can live hundred years
-Yrs = int(input("enter your age: "))
-TotalSecs = Yrs*365*24*60*60
-print(TotalSecs)
-print(TotalSecs)
+# Yrs = int(input("enter your age: "))
+# TotalSecs = Yrs*365*24*60*60
+# print(TotalSecs)
+
+#Write a Python script that displays the following table
+# 1 1 1 1 1
+# 2 1 2 4 8
+# 3 1 3 9 27
+# 4 1 4 16 64
+# 5 1 5 25 125
+for n in range(1, 6):
+    print(n, 1, n, n**2, n**3)
