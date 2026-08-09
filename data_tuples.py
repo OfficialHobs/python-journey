@@ -19,7 +19,7 @@
 # # indentation of print stops the print from being part of the loop
 # print (list2)
 
-#creating a list to print range 3, three time
+# creating a list to print range 3, three time
 # list3 =[]
 # for x in range(3):
 #     for y in range(3):
@@ -27,19 +27,39 @@
 # print(list3)
 
 
-# 
+#
 # for x in range (1,4):
 #     print(x,1,x**2,x**3)
 
-#Write a Python script that displays the following table
+# Write a Python script that displays the following table
 # 1 1 1 1 1
 # 2 1 2 4 8
 # 3 1 3 9 27
 # 4 1 4 16 64
 # 5 1 5 25 125
-
 # for x in range (1,6):
 #     print(x,x**0,x**1,x**2,x**3)
-li = [i for i in range (0,101)]
-li2 = li[3 : 9 : 3]
-print (li2)
+
+
+# # # slicing through items in list
+# li = [i for i in range (0,101)]
+# # li2 = li[3 : 9 : 3]
+# # print (li2)
+
+# li3 = li[::10]
+# print (li3)
+
+# li4= li[10::20]
+# print(li4)
+
+#get the maximum consecutive ones from the list
+count = 0
+ans = 0
+listed = [0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1]
+for x in (listed):
+    if x == 1:
+        count +=1
+        ans = max(ans,count)
+    else:
+        count = 0
+print(ans)
