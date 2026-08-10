@@ -62,7 +62,18 @@
 # print("the area of a circle with radius {} is {:.2f}".format(radius,area))
 
 # string interpolation-- f""  this allows us to directly add a value into a string in print()
-num3 = 4
-num4 = 5
-print(f"{num3} + {num4} = {num3+num4}")
-print (f"{num3} / {num4} = {num3/num4:.2f}")
+# num3 = 4
+# num4 = 5
+# print(f"{num3} + {num4} = {num3+num4}")
+# print (f"{num3} / {num4} = {num3/num4:.2f}")
+
+# unpacking characters from a string
+# syntax
+character = "python"
+a,b,c,d,e,f = character #now with this a = p,b=y,c=t,...
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
