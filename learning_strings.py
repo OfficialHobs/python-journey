@@ -69,6 +69,7 @@
 
 # unpacking characters from a string
 # syntax
+<<<<<<< HEAD
 # character = "python"
 # a,b,c,d,e,f = character #now with this a = p,b=y,c=t,...
 # print(a)
@@ -77,3 +78,13 @@
 # print(d)
 # print(e)
 # print(f)
+=======
+character = "python"
+a,b,c,d,e,f = character #now with this a = p,b=y,c=t,...
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+>>>>>>> 9929423b3950b8972112f03fec9270b3482e250d
