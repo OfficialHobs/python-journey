@@ -40,6 +40,29 @@
 # formatted_str = "the area of a circle with radius %d is %.2f." %(radius, area)
 # print(formatted_str)
 
-python_library = ["django", "flask", "nmupy"]
-formatted = "the python library include:%s" %(python_library)
-print(formatted)
+# python_library = ["django", "flask", "nmupy"]
+# formatted = "the python library include:%s" %(python_library)
+# print(formatted)
+
+# name = "nasir"
+# lname = "bashir"
+# fullname = "your name is {} {}" .format(name,lname)
+# print(fullname)
+
+# num1 = 4
+# num2 = 2
+# summation = "{} + {} = {}" .format(num1,num2,num1+num2)
+# print(summation)
+# print("the sum of the numbers is: {} ".format(num1+num2))
+
+
+# radius = 10
+# pi = 3.14
+# area = pi * radius**2
+# print("the area of a circle with radius {} is {:.2f}".format(radius,area))
+
+# string interpolation-- f""  this allows us to directly add a value into a string in print()
+num3 = 4
+num4 = 5
+print(f"{num3} + {num4} = {num3+num4}")
+print (f"{num3} / {num4} = {num3/num4:.2f}")
