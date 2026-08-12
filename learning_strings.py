@@ -79,12 +79,16 @@
 # print(e)
 # print(f)
 
-character = "python"
-a,b,c,d,e,f = character #now with this a = p,b=y,c=t,...
-print(a)
-print(b)
-print(c)
-print(d)
-print(e)
-print(f)
+# character = "python"
+# a,b,c,d,e,f = character #now with this a = p,b=y,c=t,...
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+# print(e)
+# print(f)
 
+
+#accecing char by index number 
+language = 'Python'
+first_letter = language[0]
