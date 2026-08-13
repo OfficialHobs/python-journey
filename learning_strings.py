@@ -91,4 +91,6 @@
 
 #accecing char by index number 
 language = 'Python'
-first_letter = language[0]
+first_letter = language[0] #p
+second_letter = language[1]
+print(second_letter) # y
