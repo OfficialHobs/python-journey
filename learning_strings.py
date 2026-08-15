@@ -97,3 +97,5 @@ language = 'Python'
 last_index = len(language) - 1
 last_letter = language[last_index]
 print(last_letter) # n
+second_last = language[-2]
+print(second_last) # o
