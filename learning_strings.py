@@ -108,7 +108,7 @@ last_three = language[3:5] #slicing strings
 print(last_three)
 pto = language[0:5:2]
 print(pto)
-pto2 = language[-1:-6:-2]
+pto2 = language[-1:-7:-2]
 hon = language[-3:]
 hon2= language[3:]
 print(pto2, hon, hon2)
