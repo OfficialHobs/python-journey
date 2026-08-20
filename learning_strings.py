@@ -101,14 +101,17 @@
         #indexes
         #   012345
         #   -6-5-4-3-2-1
-language = 'python'
-last_index = language[-1]
-print(last_index)
-last_three = language[3:5] #slicing strings
-print(last_three)
-pto = language[0:5:2]
-print(pto)
-pto2 = language[-1:-7:-2]
-hon = language[-3:]
-hon2= language[3:]
-print(pto2, hon, hon2)
+# language = 'python'
+# last_index = language[-1]
+# print(last_index)
+# last_three = language[3:5] #slicing strings
+# print(last_three)
+# pto = language[0:5:2]
+# print(pto)
+# pto2 = language[-1:-7:-2]
+# hon = language[-3:]
+# hon2= language[3:]
+# print(pto2, hon, hon2)
+
+greeting = 'Hello, World!'
+print(greeting[::-1]) # !dlroW ,olleH
