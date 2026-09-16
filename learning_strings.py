@@ -113,5 +113,5 @@
 # hon2= language[3:]
 # print(pto2, hon, hon2)
 
-greeting = 'Hello, World!'
-print(greeting[::-1]) # !dlroW ,olleH
+# greeting = 'Hello, World!'
+# print(greeting[::-1]) # !dlroW ,olleH
