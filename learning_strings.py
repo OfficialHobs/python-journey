@@ -2,7 +2,7 @@
 # i am a man with two cars
 # i have twelve jobs
 # i want to work harder to become the richest person in the world'''
-# # print(multiline)
+# print(multiline)
 
 # single_line = 'my name is john doe ' \
 # 'i hanve two cars'
@@ -32,18 +32,20 @@
 # classroom = "grade 4"
 # Bio = "my best subject is %s and im in %s" %(subject, classroom) #%s formats the values of subject
 # print(Bio) # output = my best subject is maths and im in grade 4
-# # print("my best subject is %s and i'm in %s")
+# print("my best subject is %s and i'm in %s" ) 
 
 # radius = 10
 # pi = 3.14
 # area = pi * radius**2
-# formatted_str = "the area of a circle with radius %d is %.2f." %(radius, area)
+# formatted_str = "the area of a circle with radius %d is %.2f" %(radius, area)
 # print(formatted_str)
+
 
 # python_library = ["django", "flask", "nmupy"]
 # formatted = "the python library include:%s" %(python_library)
 # print(formatted)
 
+# new style of string formating --- .format(var)
 # name = "nasir"
 # lname = "bashir"
 # fullname = "your name is {} {}" .format(name,lname)
@@ -62,6 +64,7 @@
 # print("the area of a circle with radius {} is {:.2f}".format(radius,area))
 
 # string interpolation-- f""  this allows us to directly add a value into a string in print()
+# techincally it allows us to perform operations inside print
 # num3 = 4
 # num4 = 5
 # print(f"{num3} + {num4} = {num3+num4}")
