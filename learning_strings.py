@@ -67,7 +67,7 @@
 # techincally it allows us to perform operations inside print
 # num3 = 4
 # num4 = 5
-# print(f"{num3} + {num4} = {num3+num4}")
+# print(f"my name is {num3} + {num4} = {num3+num4}")
 # print (f"{num3} / {num4} = {num3/num4:.2f}")
 
 # unpacking characters from a string
@@ -82,17 +82,9 @@
 # print(e)
 # print(f)
 
-# character = "python"
-# a,b,c,d,e,f = character #now with this a = p,b=y,c=t,...
-# print(a)
-# print(b)
-# print(c)
-# print(d)
-# print(e)
-# print(f)
 
 
-#accecing char by index number 
+#accessing char by index number 
 # language = 'Python'
 # # first_letter = language[0] #p
 # # second_letter = language[1]
@@ -104,17 +96,17 @@
         #indexes
         #   012345
         #   -6-5-4-3-2-1
-# language = 'python'
+language = 'python'
 # last_index = language[-1]
 # print(last_index)
 # last_three = language[3:5] #slicing strings
 # print(last_three)
 # pto = language[0:5:2]
 # print(pto)
-# pto2 = language[-1:-7:-2]
-# hon = language[-3:]
-# hon2= language[3:]
-# print(pto2, hon, hon2)
+pto2 = language[-1:-7:-2]
+hon = language[-3:]
+hon2= language[3:]
+print(pto2, hon, hon2)
 
 # greeting = 'Hello, World!'
 # print(greeting[::-1]) # !dlroW ,olleH
