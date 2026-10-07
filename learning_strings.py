@@ -103,10 +103,32 @@ language = 'python'
 # print(last_three)
 # pto = language[0:5:2]
 # print(pto)
-pto2 = language[-1:-7:-2]
-hon = language[-3:]
-hon2= language[3:]
-print(pto2, hon, hon2)
+# pto2 = language[-1:-7:-2]
+# hon = language[-3:]
+# hon2= language[3:]
+# print(pto2, hon, hon2)
 
 # greeting = 'Hello, World!'
 # print(greeting[::-1]) # !dlroW ,olleH
+
+# string formating = format strings using different methods
+# challenge = 'thirty days of python'
+# print(challenge.capitalize()) # Thirty days of python
+# print(challenge.title()) # Thirty Days Of Python
+# print(challenge.count('y')) # 3 - how many y's are in the string
+# print(challenge.count('y', 7, 14)) # 1- how many y's are in the string from index 7 to 14
+# print(challenge.endswith('on')) # True - does the string end with 'on' - a true or false statement
+# print(challenge.endswith('tion')) # False - does the string end with 'tion' - a true or false statement
+
+# challenge = 'thirty\tdays\tof\tpython'
+# print(challenge.expandtabs()) # thirty  days    of      python - expands the tabs to 8 spaces
+# print(challenge.expandtabs(10)) # thirty    days      of        python - expands the tabs to 10 spaces
+
+challenge = 'thirty days of python'
+# print(challenge.find('y')) # 5 - finds the index of the first occurrence of y 
+# print(challenge.find('th')) # 0 - finds the index of the first occurrence of 'th'
+# print(challenge.find('abc')) # -1 - 'abc' is not found in the string
+
+print(challenge.rfind('y')) # 16 - finds the index of the last occurrence of y
+print(challenge.rfind('th')) # 17 - finds the index of the last occurrence of 'th'
+print(challenge.rfind('abc')) # -1 - 'abc' is not found in the string
