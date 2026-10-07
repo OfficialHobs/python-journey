@@ -129,6 +129,17 @@ challenge = 'thirty days of python'
 # print(challenge.find('th')) # 0 - finds the index of the first occurrence of 'th'
 # print(challenge.find('abc')) # -1 - 'abc' is not found in the string
 
-print(challenge.rfind('y')) # 16 - finds the index of the last occurrence of y
-print(challenge.rfind('th')) # 17 - finds the index of the last occurrence of 'th'
-print(challenge.rfind('abc')) # -1 - 'abc' is not found in the string
+# print(challenge.rfind('y')) # 16 - finds the index of the last occurrence of y
+# print(challenge.rfind('th')) # 17 - finds the index of the last occurrence of 'th'
+# print(challenge.rfind('abc')) # -1 - 'abc' is not found in the string
+
+
+# creating a string with already learned string formating methods
+first_name = "michael"
+last_name = "jordan"
+age = 33
+job = "basketball player"
+sentence = "my name is {} {}. i am {} years old. " \
+        "i work as a {}" .format(first_name,last_name,age,job)
+
+print(sentence)
