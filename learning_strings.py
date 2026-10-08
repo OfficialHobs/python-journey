@@ -142,4 +142,9 @@ job = "basketball player"
 sentence = "my name is {} {}. i am {} years old. " \
         "i work as a {}" .format(first_name,last_name,age,job)
 
-print(sentence)
+# print(sentence)
+
+
+
+# using old stlye foramtting
+print("my name is %s %s and i am %d years old" %(first_name,last_name,age))
