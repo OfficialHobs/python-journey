@@ -96,7 +96,7 @@
         #indexes
         #   012345
         #   -6-5-4-3-2-1
-language = 'python'
+# language = 'python'
 # last_index = language[-1]
 # print(last_index)
 # last_three = language[3:5] #slicing strings
@@ -124,7 +124,7 @@ language = 'python'
 # print(challenge.expandtabs()) # thirty  days    of      python - expands the tabs to 8 spaces
 # print(challenge.expandtabs(10)) # thirty    days      of        python - expands the tabs to 10 spaces
 
-challenge = 'thirty days of python'
+# challenge = 'thirty days of python'
 # print(challenge.find('y')) # 5 - finds the index of the first occurrence of y 
 # print(challenge.find('th')) # 0 - finds the index of the first occurrence of 'th'
 # print(challenge.find('abc')) # -1 - 'abc' is not found in the string
@@ -135,17 +135,31 @@ challenge = 'thirty days of python'
 
 
 # creating a string with already learned string formating methods
-first_name = "michael"
-last_name = "jordan"
-age = 33
-job = "basketball player"
-# sentence = "my name is {} {}. i am {} years old. " \
-        # "i work as a {}" .format(first_name,last_name,age,job)
+# first_name = "michael"
+# last_name = "jordan"
+# age = 33
+# job = "basketball player"
+# # sentence = "my name is {} {}. i am {} years old. " \
+#         # "i work as a {}" .format(first_name,last_name,age,job)
 
-# print(sentence)
+# # print(sentence)
 
-# using old stlye foramtting
-# print("my name is %s %s and i am %d years old" %(first_name,last_name,age))
-new_sentence = ("my name is %s %s, i am a %s " 
-                "and i am %d years old" %(first_name,last_name,job,age))
-print(new_sentence)
+# # using old stlye foramtting
+# # print("my name is %s %s and i am %d years old" %(first_name,last_name,age))
+# new_sentence = ("my name is %s %s, i am a %s " 
+#                 "and i am %d years old" %(first_name,last_name,job,age))
+# print(new_sentence)
+
+# radius = 10
+# pi = 3.14
+# area = pi * radius**2
+# result = ("the area of a circle with radius {} is {}" .format(str(radius), int(area)))
+# print(result) #the area of a circcle with radius 10 is 314.0
+
+challenge2 = "thirty days with python da"
+substring2 = "da"
+print(challenge2.index("da")) #print the lowest index where the substing "da" lies; which is = 7
+print(challenge2.index(substring2)) # output 7
+print(challenge2.index(substring2, 9)) # output an error as the substring "da"
+print(challenge2.index(substring2, 0, -1)) #output 7 - because startindex 0 endindex automatically is 
+                                        #    -1 which is the last index
