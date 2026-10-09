@@ -139,12 +139,13 @@ first_name = "michael"
 last_name = "jordan"
 age = 33
 job = "basketball player"
-sentence = "my name is {} {}. i am {} years old. " \
-        "i work as a {}" .format(first_name,last_name,age,job)
+# sentence = "my name is {} {}. i am {} years old. " \
+        # "i work as a {}" .format(first_name,last_name,age,job)
 
 # print(sentence)
 
-
-
 # using old stlye foramtting
-print("my name is %s %s and i am %d years old" %(first_name,last_name,age))
+# print("my name is %s %s and i am %d years old" %(first_name,last_name,age))
+new_sentence = ("my name is %s %s, i am a %s " 
+                "and i am %d years old" %(first_name,last_name,job,age))
+print(new_sentence)
