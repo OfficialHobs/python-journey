@@ -158,8 +158,14 @@
 
 challenge2 = "thirty days with python da"
 substring2 = "da"
-print(challenge2.index("da")) #print the lowest index where the substing "da" lies; which is = 7
-print(challenge2.index(substring2)) # output 7
-print(challenge2.index(substring2, 9)) # output an error as the substring "da"
-print(challenge2.index(substring2, 0, -1)) #output 7 - because startindex 0 endindex automatically is 
-                                        #    -1 which is the last index
+# print(challenge2.index("da")) #print the lowest index where the substing "da" lies; which is = 7
+# print(challenge2.index(substring2)) # output 7
+# print(challenge2.index(substring2, 9)) # output an error as the substring "da"
+# print(challenge2.index(substring2, 9)) #output 7 - because startindex 0, endindex automatically is 
+                                        #    -1 which is the last index- but lastindex are always excluded
+                                        # in a slice like [0, -1]
+
+# rindex now prints the highest index where "da" appears
+# print(challenge2.rindex(substring2))
+# print(challenge2.rindex(substring2, 0, -1))
+# print(challenge2.find(substring2, 2)) # i did this only to test whether you can pass arguements to .find
