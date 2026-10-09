@@ -156,8 +156,8 @@
 # result = ("the area of a circle with radius {} is {}" .format(str(radius), int(area)))
 # print(result) #the area of a circcle with radius 10 is 314.0
 
-challenge2 = "thirty days with python da"
-substring2 = "da"
+# challenge2 = "thirty days with python da"
+# substring2 = "da"
 # print(challenge2.index("da")) #print the lowest index where the substing "da" lies; which is = 7
 # print(challenge2.index(substring2)) # output 7
 # print(challenge2.index(substring2, 9)) # output an error as the substring "da"
@@ -169,3 +169,20 @@ substring2 = "da"
 # print(challenge2.rindex(substring2))
 # print(challenge2.rindex(substring2, 0, -1))
 # print(challenge2.find(substring2, 2)) # i did this only to test whether you can pass arguements to .find
+
+# check for alpanumeric chars. using .isalnum
+# Note that this doesnt support arguments i.e challenge.isalnum(substring3)
+# challenge3 = "ThirtyDaysWithPythonDa" #Notice no space is used - this is what alphanumeric means
+# substring3 = "Da"
+# either
+# print(substring3.isalnum())
+# or we say
+# print(challenge3.isalnum())
+# and not this
+# print(challenge3.isalnum(substring3)) # error as it doesnt support arguements
+
+# isalpha - checks if the entire string is alphabet
+challenge4 = "thirty days of python"
+print(challenge4.isalpha()) #expected output = False
+challenge5 = 'thirtydaysofpython'
+print(challenge5.isalpha()) #expected output = True
