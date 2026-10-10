@@ -183,6 +183,6 @@
 
 # isalpha - checks if the entire string is alphabet
 challenge4 = "thirty days of python"
-print(challenge4.isalpha()) #expected output = False
+print(challenge4.isalpha()) #expected output = False beccause it contains space
 challenge5 = 'thirtydaysofpython'
 print(challenge5.isalpha()) #expected output = True
