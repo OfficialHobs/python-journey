@@ -201,5 +201,17 @@
 # result = digit.isdigit()
 # print(result)
 
-num = '\u00b2'
-print(num.isdigit()) # apparently, because this is a Unicode character, it return as true digit
+# num = '\u00b2' # \u00b2 character represents the superscript two
+# print(num.isdigit()) # apparently, because this is a Unicode character, it return as true digit
+# print(num.isdecimal()) # returns false
+# print(num.isnumeric()) # returns true because it checks if the characters are
+# print(num.isidentifier()) # is valid variable name?
+
+# letter = 'abcdef'
+# print(letter.isupper()) 
+# print(letter.islower())
+
+# joins all strings of an arguement (technologies) together
+technologies = 'html', 'css', 'java'
+fruits = 'apple', 'mango', 'orange'
+print(fruits.join(technologies))
