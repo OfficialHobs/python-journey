@@ -191,13 +191,15 @@
 # new= '23'
 # print(new.isalpha())
 # print(new.isdecimal())
-nodec = '50 60'
-print(nodec.isdecimal()) #why? because '50 space 60' is not a digit of 0-9,
+# nodec = '50 60'
+# print(nodec.isdecimal()) #why? because '50 space 60' is not a digit of 0-9,
                         
-nodec2 = '5060'
-print(nodec2.isdecimal()) #but if it was 5060 = true
+# nodec2 = '5060'
+# print(nodec2.isdecimal()) #but if it was 5060 = true
 
-digit = '0775hk6/'
-result = digit.isdigit()
-print(result)
+# digit = '0775hk6/'
+# result = digit.isdigit()
+# print(result)
 
+num = '\u00b2'
+print(num.isdigit()) # apparently, because this is a Unicode character, it return as true digit
