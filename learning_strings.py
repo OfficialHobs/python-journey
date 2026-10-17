@@ -188,6 +188,16 @@
 # print(challenge5.isalpha()) #expected output = True
 
 # isDecimal -chccks if all strings are decimal (0-9) dec
-new= '23'
-print(new.isalpha())
-print(new.isdecimal())
+# new= '23'
+# print(new.isalpha())
+# print(new.isdecimal())
+nodec = '50 60'
+print(nodec.isdecimal()) #why? because '50 space 60' is not a digit of 0-9,
+                        
+nodec2 = '5060'
+print(nodec2.isdecimal()) #but if it was 5060 = true
+
+digit = '0775hk6/'
+result = digit.isdigit()
+print(result)
+
