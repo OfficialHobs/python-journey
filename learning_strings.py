@@ -182,7 +182,13 @@
 # print(challenge3.isalnum(substring3)) # error as it doesnt support arguements
 
 # isalpha - checks if the entire string is alphabet
-challenge4 = "thirty days of python"
-print(challenge4.isalpha()) #expected output = False beccause it contains space
-challenge5 = 'thirtydaysofpython'
-print(challenge5.isalpha()) #expected output = True
+# challenge4 = "thirty days of python"
+# print(challenge4.isalpha()) #expected output = False beccause it contains space
+# challenge5 = 'thirtydaysofpython'
+# print(challenge5.isalpha()) #expected output = True
+
+# isDecimal
+new= '23'
+result = new.isalpha()
+print(result)
+print(new.isalpha())
