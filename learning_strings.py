@@ -187,8 +187,7 @@
 # challenge5 = 'thirtydaysofpython'
 # print(challenge5.isalpha()) #expected output = True
 
-# isDecimal
+# isDecimal -chccks if all strings are decimal (0-9) dec
 new= '23'
-result = new.isalpha()
-print(result)
 print(new.isalpha())
+print(new.isdecimal())
