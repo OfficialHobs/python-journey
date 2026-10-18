@@ -218,5 +218,15 @@
 # print(fruits[0].join(technologies))
 # print(', '.join(technologies))
 
+# word = 'hello im biggire'
+# print(word.strip('hie')) #removes arguent (all 'chars') from beginin and end
+                        #  therefore, 'h' and 'e' begins and only 'e' ends.
+                        # final result = llo i biggir..if we used ''hire' result = llo i bigg
 
-
+newvar = 'My name is celine'
+print(newvar.replace('celine', 'Tani')) # rpelace takes two argumemnt - current and new-(replacer)
+print(newvar.split()) #uses the comma to split or replace anywhere 'space' is found
+print(newvar.split('e ')) #the first 'e ' is replaced by ', " "
+print(newvar.split("m ")) #since no string end with "m', it simply take all strings and combine as one
+print(newvar.swapcase()) #swaps the cace of the string = mY NAME IS CELINE
+print(newvar.startswith('My')) #true - because it starts with My
