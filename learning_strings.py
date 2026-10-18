@@ -211,7 +211,12 @@
 # print(letter.isupper()) 
 # print(letter.islower())
 
-# joins all strings of an arguement (technologies) together
-technologies = 'html', 'css', 'java'
-fruits = 'apple', 'mango', 'orange'
-print(fruits.join(technologies))
+# .joins lets you join all strings of an arguement (technologies- html,css..) together with a 'value'
+# technologies = 'html', 'css', 'java'
+# fruits = 'apple', 'mango', 'orange'
+# # print(fruits.join(technologies)) #error
+# print(fruits[0].join(technologies))
+# print(', '.join(technologies))
+
+
+
