@@ -226,8 +226,9 @@
 # newvar = 'My name is celine'
 # print(newvar.replace('celine', 'Tani')) # replace takes two argumemnt - current and new-(replacer)
 # print(newvar.split()) #uses the comma to split or replace anywhere 'space' is found
-# print(newvar.split('e ')) #the first 'e ' is replaced by ', " "
-# print(newvar.split("m ")) #since no string end with "m', it simply take all strings and combine as one
+# print(newvar.split('e')) #all 'e' is replaced by ','
+# print(newvar.split('e ')) #the 'e space' = name space (nam e space) --- is replaced by ','
+# print(newvar.split("m ")) #since no string end with "m space', it simply take all strings and combine as one
 # print(newvar.swapcase()) #swaps the cace of the string = mY NAME IS CELINE
 # print(newvar.startswith('My')) #true - because it starts with My
 
@@ -236,39 +237,50 @@
 
 # Concatenate the string 
 # 'Thirty', 'Days', 'Of', 'Python' to a single string, 'Thirty Days Of Python'.
-first = 'thirty'
-second= 'days'
-third = 'of'
-fourth = 'python'
-join = first + ' ' + second + ' ' + third + ' ' + fourth
-print(join)
+# first = 'thirty'
+# second= 'days'
+# third = 'of'
+# fourth = 'python'
+# join = first + ' ' + second + ' ' + third + ' ' + fourth
+# print(join)
 
-# Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'
-new1= "Coding"
-new2= "For"
-new3 = "All"
-new4 = "{} {} {}" .format(new1,new2,new3)
-print(new4)
+# # Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'
+# new1= "Coding"
+# new2= "For"
+# new3 = "All"
+# new4 = "{} {} {}" .format(new1,new2,new3)
+# print(new4)
 
-# Declare a variable named company and assign it to an initial value "Coding For All".
+# # Declare a variable named company and assign it to an initial value "Coding For All".
 company = "Coding For All"
-# Print the variable company using print().
-print(company)
-# Print the length of the company string using len() method and print().
-print(len(company))
-# Change all the characters to uppercase letters using upper() method.
-print(company.upper())
-# Change all the characters to lowercase letters using lower() method.
-print(company.lower())
-# Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
-print(company.capitalize()) #first letter of sentence is capitalized
-print(company.title()) #Capitalize each string
-print(company.swapcase()) #cases are reversed
-# Cut(slice) out the first word of Coding For All string.
-print(company[7::])
-# Check if Coding For All string contains a word Coding using the method index, 
-# find or other methods.
-print(company.index('Coding')) # output 0'th index - that is the first index it can be found
-print(company.index('Coding', 0, -1)) # output 0'th index
+# # Print the variable company using print().
+# print(company)
+# # Print the length of the company string using len() method and print().
+# print(len(company))
+# # Change all the characters to uppercase letters using upper() method.
+# print(company.upper())
+# # Change all the characters to lowercase letters using lower() method.
+# print(company.lower())
+# # Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
+# print(company.capitalize()) #first letter of sentence is capitalized
+# print(company.title()) #Capitalize each string
+# print(company.swapcase()) #cases are reversed
+# # Cut(slice) out the first word of Coding For All string.
+# print(company[7::])
+# # Check if Coding For All string contains a word Coding using the method index, 
+# # find or other methods.
+# print(company.index('Coding')) # output 0'th index - that is the first index it can be found
+# print(company.index('Coding', 0, -1)) # output 0'th index
 # print(company.index('Coding', 7, -1)) #error output because Coding cannot be found in index 7 to -1
-print(company.find('Coding', 0, -1))    
+# print(company.find('Coding', 0, -1))    
+
+# Replace the word coding in the string 'Coding For All' to Python.
+print(company.replace('Coding', 'Python'))
+# Change "Python for Everyone" to "Python for All" using the replace method or other methods
+print('Python for Everyone'.replace('Everyone', 'All'))
+# Split the string 'Coding For All' using space as the separator (split()) .
+print(company.split())
+# "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
+print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(','))
+# What is the character at index 0 in the string Coding For All.
+print(company[0])
