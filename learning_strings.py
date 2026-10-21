@@ -161,7 +161,7 @@
 # print(challenge2.index("da")) #print the lowest index where the substing "da" lies; which is = 7
 # print(challenge2.index(substring2)) # output 7
 # print(challenge2.index(substring2, 9)) # output an error as the substring "da"
-# print(challenge2.index(substring2, 9)) #output 7 - because startindex 0, endindex automatically is 
+# print(challenge2.index(substring2, 0, -1)) #output 7 - because startindex 0, endindex automatically is 
                                         #    -1 which is the last index- but lastindex are always excluded
                                         # in a slice like [0, -1]
 
@@ -224,7 +224,7 @@
                         # final result = llo i biggir..if we used ''hire' result = llo i bigg
 
 # newvar = 'My name is celine'
-# print(newvar.replace('celine', 'Tani')) # rpelace takes two argumemnt - current and new-(replacer)
+# print(newvar.replace('celine', 'Tani')) # replace takes two argumemnt - current and new-(replacer)
 # print(newvar.split()) #uses the comma to split or replace anywhere 'space' is found
 # print(newvar.split('e ')) #the first 'e ' is replaced by ', " "
 # print(newvar.split("m ")) #since no string end with "m', it simply take all strings and combine as one
@@ -251,3 +251,24 @@ new4 = "{} {} {}" .format(new1,new2,new3)
 print(new4)
 
 # Declare a variable named company and assign it to an initial value "Coding For All".
+company = "Coding For All"
+# Print the variable company using print().
+print(company)
+# Print the length of the company string using len() method and print().
+print(len(company))
+# Change all the characters to uppercase letters using upper() method.
+print(company.upper())
+# Change all the characters to lowercase letters using lower() method.
+print(company.lower())
+# Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
+print(company.capitalize()) #first letter of sentence is capitalized
+print(company.title()) #Capitalize each string
+print(company.swapcase()) #cases are reversed
+# Cut(slice) out the first word of Coding For All string.
+print(company[7::])
+# Check if Coding For All string contains a word Coding using the method index, 
+# find or other methods.
+print(company.index('Coding')) # output 0'th index - that is the first index it can be found
+print(company.index('Coding', 0, -1)) # output 0'th index
+# print(company.index('Coding', 7, -1)) #error output because Coding cannot be found in index 7 to -1
+print(company.find('Coding', 0, -1))    
