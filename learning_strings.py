@@ -223,10 +223,31 @@
                         #  therefore, 'h' and 'e' begins and only 'e' ends.
                         # final result = llo i biggir..if we used ''hire' result = llo i bigg
 
-newvar = 'My name is celine'
-print(newvar.replace('celine', 'Tani')) # rpelace takes two argumemnt - current and new-(replacer)
-print(newvar.split()) #uses the comma to split or replace anywhere 'space' is found
-print(newvar.split('e ')) #the first 'e ' is replaced by ', " "
-print(newvar.split("m ")) #since no string end with "m', it simply take all strings and combine as one
-print(newvar.swapcase()) #swaps the cace of the string = mY NAME IS CELINE
-print(newvar.startswith('My')) #true - because it starts with My
+# newvar = 'My name is celine'
+# print(newvar.replace('celine', 'Tani')) # rpelace takes two argumemnt - current and new-(replacer)
+# print(newvar.split()) #uses the comma to split or replace anywhere 'space' is found
+# print(newvar.split('e ')) #the first 'e ' is replaced by ', " "
+# print(newvar.split("m ")) #since no string end with "m', it simply take all strings and combine as one
+# print(newvar.swapcase()) #swaps the cace of the string = mY NAME IS CELINE
+# print(newvar.startswith('My')) #true - because it starts with My
+
+
+# excersize
+
+# Concatenate the string 
+# 'Thirty', 'Days', 'Of', 'Python' to a single string, 'Thirty Days Of Python'.
+first = 'thirty'
+second= 'days'
+third = 'of'
+fourth = 'python'
+join = first + ' ' + second + ' ' + third + ' ' + fourth
+print(join)
+
+# Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'
+new1= "Coding"
+new2= "For"
+new3 = "All"
+new4 = "{} {} {}" .format(new1,new2,new3)
+print(new4)
+
+# Declare a variable named company and assign it to an initial value "Coding For All".
