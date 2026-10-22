@@ -252,7 +252,7 @@
 # print(new4)
 
 # # Declare a variable named company and assign it to an initial value "Coding For All".
-company = "Coding For All"
+# company = "Coding For All"
 # # Print the variable company using print().
 # print(company)
 # # Print the length of the company string using len() method and print().
@@ -290,26 +290,48 @@ company = "Coding For All"
 # print(company[10])
 
 # Create an acronym or an abbreviation for the name 'Python For Everyone'
-streep = 'Python For Everyone'
+# streep = 'Python For Everyone'
 
-s1 = streep[0]
-s2 = streep[7]
-s3 = streep[11]
-print(s1 + s2 + s3)
-# another method
-pfe = ''
-spleet = streep.split()
-# print(spleet)
-for word in spleet:
-        pfe += word[0]
-print(pfe)
+# s1 = streep[0]
+# s2 = streep[7]
+# s3 = streep[11]
+# print(s1 + s2 + s3)
+# # another method
+# pfe = ''
+# spleet = streep.split()
+# # print(spleet)
+# for word in spleet:
+#         pfe += word[0]
+# print(pfe)
 
 # Create an acronym or an abbreviation for the name 'Coding For All'.
-dell = 'Coding For All'
+# dell = 'Coding For All'
 
-cut = ''
-newdell = dell.split()
-print(newdell)
-for strin in newdell:
-        cut += strin[0]
-print(cut)
+# cut = ''
+# newdell = dell.split()
+# print(newdell)
+# for strin in newdell:
+#         cut += strin[0]
+# print(cut)
+
+# # Use index to determine the position of the first occurrence of C in Coding For All.
+# print(dell.index('C'))
+# # Use index to determine the position of the first occurrence of F in Coding For All.
+# print(dell.index('F'))
+# # Use rfind to determine the position of the last occurrence of l in Coding For All People.
+# print(dell.rfind('l'))
+
+# Use index or find to find the position of the first occurrence of the word 
+# 'because' in the following sentence: 
+# 'You cannot end a sentence with because because because is a conjunction'
+newword = 'You cannot end a sentence with because because because is a conjunction'
+cut1 = newword.split()
+print(cut1.index('because'))
+
+# Use rindex to find the position of the last occurrence of the word because in the following sentence:
+#  'You cannot end a sentence with because because because is a conjunction'
+oldword = 'You cannot end a sentence with because because because is a conjunction'
+# cut2 = oldword.split()
+# print(len(cut2))
+print(oldword.rindex('because'))# NOTe that this outputs : index 47 of the whole string. no split is used
+
