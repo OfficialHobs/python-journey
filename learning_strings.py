@@ -274,13 +274,32 @@ company = "Coding For All"
 # print(company.index('Coding', 7, -1)) #error output because Coding cannot be found in index 7 to -1
 # print(company.find('Coding', 0, -1))    
 
-# Replace the word coding in the string 'Coding For All' to Python.
-print(company.replace('Coding', 'Python'))
-# Change "Python for Everyone" to "Python for All" using the replace method or other methods
-print('Python for Everyone'.replace('Everyone', 'All'))
-# Split the string 'Coding For All' using space as the separator (split()) .
-print(company.split())
-# "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
-print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(','))
-# What is the character at index 0 in the string Coding For All.
-print(company[0])
+# # Replace the word coding in the string 'Coding For All' to Python.
+# print(company.replace('Coding', 'Python'))
+# # Change "Python for Everyone" to "Python for All" using the replace method or other methods
+# print('Python for Everyone'.replace('Everyone', 'All'))
+# # Split the string 'Coding For All' using space as the separator (split()) .
+# print(company.split())
+# # "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
+# print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(','))
+# # What is the character at index 0 in the string Coding For All.
+# print(company[0])
+# # What is the last index of the string Coding For All.
+# print(company.rfind('l')) #rfind looks for the highest index of a particular character
+# # What character is at index 10 in "Coding For All" string.
+# print(company[10])
+
+# Create an acronym or an abbreviation for the name 'Python For Everyone'
+streep = 'Python For Everyone'
+
+s1 = streep[0]
+s2 = streep[7]
+s3 = streep[11]
+print(s1 + s2 + s3)
+# another method
+pfe = ''
+spleet = streep.split()
+# print(spleet)
+for word in spleet:
+        pfe += word[0]
+print(pfe)
