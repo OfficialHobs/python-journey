@@ -324,14 +324,25 @@
 # Use index or find to find the position of the first occurrence of the word 
 # 'because' in the following sentence: 
 # 'You cannot end a sentence with because because because is a conjunction'
-newword = 'You cannot end a sentence with because because because is a conjunction'
-cut1 = newword.split()
-print(cut1.index('because'))
+# newword = 'You cannot end a sentence with because because because is a conjunction'
+# cut1 = newword.split()
+# print(cut1.index('because'))
 
-# Use rindex to find the position of the last occurrence of the word because in the following sentence:
-#  'You cannot end a sentence with because because because is a conjunction'
-oldword = 'You cannot end a sentence with because because because is a conjunction'
+# # Use rindex to find the position of the last occurrence of the word because in the following sentence:
+# #  'You cannot end a sentence with because because because is a conjunction'
+# oldword = 'You cannot end a sentence with because because because is a conjunction'
+
+# print(oldword.rindex('because'))# NOTe that this outputs : index 47 of the whole string. no split is used
+# # or we can do this
 # cut2 = oldword.split()
-# print(len(cut2))
-print(oldword.rindex('because'))# NOTe that this outputs : index 47 of the whole string. no split is used
+# print(len(cut2)-1 - cut2[::-1].index('because'))#take the reversed index of the last 'because'from len-1
 
+# Slice out the phrase 'because because because' in the following sentence:
+#  'You cannot end a sentence with because because because is a conjunction
+phrase = 'You cannot end a sentence with because because because is a conjunction'
+# option one
+cut3 = phrase.split()
+result = cut3[6:9:1]
+print(' '.join(result))
+# option 2 or simply put...
+print(phrase[31:54:1])
