@@ -303,3 +303,13 @@ spleet = streep.split()
 for word in spleet:
         pfe += word[0]
 print(pfe)
+
+# Create an acronym or an abbreviation for the name 'Coding For All'.
+dell = 'Coding For All'
+
+cut = ''
+newdell = dell.split()
+print(newdell)
+for strin in newdell:
+        cut += strin[0]
+print(cut)
