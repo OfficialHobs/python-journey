@@ -221,7 +221,7 @@
 # word = 'hello im biggire'
 # print(word.strip('hie')) #removes arguent (all 'chars') from beginin and end
                         #  therefore, 'h' and 'e' begins and only 'e' ends.
-                        # final result = llo i biggir..if we used ''hire' result = llo i bigg
+                        # final result = llo im biggir..if we used ''hire' result = llo i bigg
 
 # newvar = 'My name is celine'
 # print(newvar.replace('celine', 'Tani')) # replace takes two argumemnt - current and new-(replacer)
@@ -339,10 +339,73 @@
 
 # Slice out the phrase 'because because because' in the following sentence:
 #  'You cannot end a sentence with because because because is a conjunction
-phrase = 'You cannot end a sentence with because because because is a conjunction'
-# option one
-cut3 = phrase.split()
-result = cut3[6:9:1]
-print(' '.join(result))
-# option 2 or simply put...
-print(phrase[31:54:1])
+# phrase = 'You cannot end a sentence with because because because is a conjunction'
+# # option one
+# cut3 = phrase.split()
+# result = cut3[6:9:1]
+# print(' '.join(result))
+# # option 2 or simply put...
+# print(phrase[31:54:1])
+
+# # Does 'Coding For All' start with a substring Coding?
+# Dword = 'Coding For All'
+# print(Dword.startswith('Coding'))
+# # Does 'Coding For All' end with a substring coding?
+# print(Dword.endswith('coding'))
+
+# '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+# rword = '   Coding For All      '
+# print(rword.strip(' '))
+
+# # Which one of the following variables return True when we use the method isidentifier():
+# # 30DaysOfPython 
+# # thirty_days_of_python
+# first = '30DaysOfPython'.isidentifier() #False
+# seccond = 'thirty_days_of_python'.isidentifier() #True
+# print(first,seccond)
+
+# # The following list contains the names of some of python libraries: 
+# # ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. 
+# # Join the list with a hash with space string.
+
+# listed = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+# joint = '# '.join(listed)
+# print(joint)
+
+# Use the new line escape sequence to separate the following sentences.
+#I am enjoying this challenge.
+#I just wonder what is next.
+
+# word = 'I am enjoying this challenge. \n I just wonder what is next.'
+# print(word)
+
+# Use a tab escape sequence to write the following lines.
+# Name      Age     Country   City
+# john      250     Nigeria   Abuja
+
+# print('Name\tAge\tCountry\tCity')
+# print('John\t250\tNigeria\tAbuja')
+
+# Use the string formatting method to display the following:
+# radius = 10
+# area = int(3.14 * radius ** 2)
+# # The area of a circle with radius 10 is 314 meters square.
+# print('the area of a cirle with radius {} is {} meters square' .format(radius,area))
+
+# Make the following using string formatting methods:
+# 8 + 6 = 14
+# 8 - 6 = 2
+# 8 * 6 = 48
+# 8 / 6 = 1.33
+# 8 % 6 = 2
+# 8 // 6 = 1
+# 8 ** 6 = 262144
+num1 = 8
+num2 = 6
+print('{} + {} = {}'.format(num1,num2,num1+num2))
+print('{} - {} = {}'.format(num1,num2,num1-num2))
+print('{} * {} = {}'.format(num1,num2,num1*num2))
+print('{} / {} = {:.2f}'.format(num1,num2,num1/num2))
+print('{} % {} = {}'.format(num1,num2,num1%num2))
+print('{} // {} = {}'.format(num1,num2,num1//num2))
+print('{} ** {} = {}'.format(num1,num2,num1**num2))
