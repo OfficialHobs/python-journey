@@ -10,11 +10,17 @@
 # print(' '.join(fruits)) # output = orange appple  lie wateremlon ====i learned this previously
 
 #list can have multiple data types 
-profile = ['habib', 'oluwa', str({'age':30, "score":100}), str(True)]
-print(profile)
-print(len(profile))
-print(' '.join(profile))
+# profile = ['habib', 'oluwa', str({'age':30, "score":100}), str(True)]
+# print(profile)
+# print(len(profile))
+# print(' '.join(profile))
 # here is what i noticed: we cannot .join data type that is not string in python
 # we have to convert them to str by saying str(original syntax data type) like above
 # this will then convert the data to string first the join can now execute.
 # therefore .join only supports strings.
+
+#accessing a list by index
+color = ['blue','red','yellow']
+print(color[0]) #blue
+last_index = len(color) -1 #len color = 3 -1 = 2.. so since last_index is 2, therefore..
+print(color[last_index]) #we are simply saying that [2] = [last_index] = yellow
