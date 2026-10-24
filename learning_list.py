@@ -26,8 +26,34 @@
 # print(color[last_index]) #we are simply saying that [2] = [last_index] = yellow
 
 # accessing a list item by negative index
-cars = ['volkwagen','toyota','honda','jeep']
-end_index = cars[-1] #jeep
-next_index = cars[-2] #honda
-print(end_index)
-print(next_index)
+# cars = ['volkwagen','toyota','honda','jeep']
+# end_index = cars[-1] #jeep
+# next_index = cars[-2] #honda
+# print(end_index)
+# print(next_index)
+
+# upacking a list
+# names = ['fola','berry','dami','kami','klaus']
+# firstnm,secondnm,thirdnm,*remaindernm = names #that *remaindernm means store the rest of the LIST to this
+# print(firstnm)#fola
+# print(secondnm)#berry
+# print(thirdnm) #dami
+# print(remaindernm)# ['kami', 'klaus']
+
+# numbers = [1,2,3,4,5,6,7,8,9,10]
+# first,second,*remainder,last = numbers
+# print(first) #1
+# print(second) #2
+# print(remainder) #[3,4,5,6,7,8,9] --- it stops at 9 because there is an extra var name(last) that follows
+# print(last) #10
+
+# string slicing
+alpa = ['a','b','c','d','e']
+slice1 = alpa[0:] #['a','b','c','d','e'] ---start from index 0 and dont stop to slice
+slice2 = alpa[0:3] #['a','b','c'] ----start from 0 and slice at index 3
+slice3 = alpa[2:4] #['c','d']---start from 2 =c and end 4=e but we cut at 'e' so output =d
+slice4 = alpa[1:4:2] # ['b','d'] --start form b skip c to d , skip e to nothing
+print(slice1)
+print(slice2)
+print(slice3)
+print(slice4)
