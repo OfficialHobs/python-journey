@@ -20,7 +20,14 @@
 # therefore .join only supports strings.
 
 #accessing a list by index
-color = ['blue','red','yellow']
-print(color[0]) #blue
-last_index = len(color) -1 #len color = 3 -1 = 2.. so since last_index is 2, therefore..
-print(color[last_index]) #we are simply saying that [2] = [last_index] = yellow
+# color = ['blue','red','yellow']
+# print(color[0]) #blue
+# last_index = len(color) -1 #len color = 3 -1 = 2.. so since last_index is 2, therefore..
+# print(color[last_index]) #we are simply saying that [2] = [last_index] = yellow
+
+# accessing a list item by negative index
+cars = ['volkwagen','toyota','honda','jeep']
+end_index = cars[-1] #jeep
+next_index = cars[-2] #honda
+print(end_index)
+print(next_index)
