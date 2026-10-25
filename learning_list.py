@@ -49,11 +49,16 @@
 
 # string slicing
 alpa = ['a','b','c','d','e']
-slice1 = alpa[0:] #['a','b','c','d','e'] ---start from index 0 and dont stop to slice
-slice2 = alpa[0:3] #['a','b','c'] ----start from 0 and slice at index 3
-slice3 = alpa[2:4] #['c','d']---start from 2 =c and end 4=e but we cut at 'e' so output =d
+slice1 = alpa[0:] # ['a','b','c','d','e'] ---start from index 0 and dont stop to slice
+slice2 = alpa[0:3] # ['a','b','c'] ----start from 0 and slice at index 3
+slice3 = alpa[2:4] # ['c','d'] ---start from 2 =c and end 4=e but we cut at 'e' so output =d
 slice4 = alpa[1:4:2] # ['b','d'] --start form b skip c to d , skip e to nothing
+negslice = alpa[-4:] # ['b', 'c', 'd', 'e'] 
+negslice2 = alpa[-4:-1] # ['b', 'c', 'd']
+negslice3 = alpa[-4:-1:-2] #['b', 'c', 'd'] 
 print(slice1)
 print(slice2)
 print(slice3)
 print(slice4)
+print(negslice)
+print(negslice2)
