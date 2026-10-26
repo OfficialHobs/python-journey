@@ -70,13 +70,21 @@
 
 
 # modifying or updating a list
-boys = ['dele', 'harold', 'sam', 'kim']
-print(boys)
-boys[3] = 'jeff'
-print(boys)
-boys[-3] = 'ronny'
-print(boys)
-# changing the very last boy name assuming we dont know the index number
-lastboy = len(boys) -1
-boys[lastboy] = 'ben'
-print(boys)
+# boys = ['dele', 'harold', 'sam', 'kim']
+# print(boys)
+# boys[3] = 'jeff'
+# print(boys)
+# boys[-3] = 'ronny'
+# print(boys)
+# # changing the very last boy name assuming we dont know the index number
+# lastboy = len(boys) -1
+# boys[lastboy] = 'ben'
+# print(boys)
+
+# checking an item in a list
+girls = ['dera', 'iris', 'vera', 'tess', 'candice']
+print("tess" in girls)
+print('balli' in girls)
+# we can also store it inside a variable
+istrue = 'vera' in girls
+print(istrue)
