@@ -90,9 +90,26 @@
 # print(istrue)
 
 # adding items to a list
-cities = ['tokyo', 'lagos', 'madrid', 'fulham', 'stuggart']
-print(cities)
-print('lille' in cities) #False ---- testing
-cities.append('lille')
-print(cities)
-print('lille' in cities) #True ---- testing
+# cities = ['tokyo', 'lagos', 'madrid', 'fulham', 'stuggart']
+# print(cities)
+# print('lille' in cities) #False ---- testing
+# cities.append('lille')
+# print(cities)
+# print('lille' in cities) #True ---- testing
+
+# inserting items to a list
+# syntax
+# lst = ['item1', 'item2']
+# lst.insert(index, item)
+# phone = ['iphone', 'samsung', 'google', 'tecno']
+# phone.insert(2,'itel') # so insert takes two values - (index, item)
+# print(phone)
+
+# removing an item from a list
+
+item7 = ['food', 'cloth', 'bags', 'drinks']
+item7.remove('food') 
+print(item7)
+# let us add it back
+item7.insert(0,'food')
+print(item7)
