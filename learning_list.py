@@ -82,9 +82,17 @@
 # print(boys)
 
 # checking an item in a list
-girls = ['dera', 'iris', 'vera', 'tess', 'candice']
-print("tess" in girls)
-print('balli' in girls)
-# we can also store it inside a variable
-istrue = 'vera' in girls
-print(istrue)
+# girls = ['dera', 'iris', 'vera', 'tess', 'candice']
+# print("tess" in girls)
+# print('balli' in girls)
+# # we can also store it inside a variable
+# istrue = 'vera' in girls
+# print(istrue)
+
+# adding items to a list
+cities = ['tokyo', 'lagos', 'madrid', 'fulham', 'stuggart']
+print(cities)
+print('lille' in cities) #False ---- testing
+cities.append('lille')
+print(cities)
+print('lille' in cities) #True ---- testing
