@@ -107,9 +107,41 @@
 
 # removing an item from a list
 
-item7 = ['food', 'cloth', 'bags', 'drinks']
-item7.remove('food') 
-print(item7)
-# let us add it back
-item7.insert(0,'food')
-print(item7)
+# item7 = ['food', 'cloth', 'bags', 'drinks']
+# item7.remove('food') 
+# print(item7)
+# # let us add it back
+# item7.insert(0,'food')
+# print(item7)
+
+# removing an item with pop
+# pop removes indexes
+# it may or may not take in arguement 
+# item2 = ['car', 'plane', 'train']
+# item2.pop() #removes the item on the last index
+# print(item2)
+# item2.append('train') #removes item 'train'
+# print(item2)
+# item2.pop(0) #remove item on the indexx 0 == 'car'
+# print(item2)
+
+# removing using del
+# animals = ['dog', 'cat', 'goat', 'pig']
+# del animals[0] #spot that it uses [] to take arguments
+# print(animals) #dog is deleted --['cat', 'goat', 'pig']- 
+
+# # lets add more to the list the delete again
+# animals.append('cow') #['cat', 'goat', 'pig', 'cow']
+# animals.append('hen') #['cat', 'goat', 'pig', 'cow', 'hen']
+# print(animals)
+
+# del animals[1:3]
+# print(animals) #['cat', 'cow', 'hen']
+
+# del animals #deletes the who list
+# print(animals) #this should give error, because the list has been delete and does not exist
+
+# clear-- we do not delete the list but erase the item in the list
+list1=[1,2,3,4]
+list1.clear()
+print(list1) #output == []. so no error
