@@ -142,6 +142,54 @@
 # print(animals) #this should give error, because the list has been delete and does not exist
 
 # clear-- we do not delete the list but erase the item in the list
-list1=[1,2,3,4]
-list1.clear()
-print(list1) #output == []. so no error
+# list1=[1,2,3,4]
+# list1.clear()
+# print(list1) #output == []. so no error
+
+# copying a list
+# game = [1,2,3,4,5]
+# nwgame = game
+# print(nwgame)
+
+# play = ['ludo', 'chess', 'cards', 3]
+# nwplay = play.copy()
+# print(nwplay)
+
+# joining a list
+# we can joing by concatenating list + list
+
+name = ['benny', 'jaes']
+ages = [45, 34]
+cars = ['lambo', 'ferrari']
+# joinlist = name + ages + cars
+# print(joinlist)
+
+#  or we should use the method extend
+# name.extend(ages)
+# name.extend(cars)
+# print(name)
+
+# counting the nuber of times an item appear on the list
+# print(name.count('benny')) #1
+
+# # finding the index of an item
+# print(name.index('jaes')) #1
+
+# # reversing a list
+# print(cars.reverse()) #['ferrari', 'lambo']
+
+# sorting the list
+new = [1,3,4,2,5,6,8,7]
+# new.sort()
+# print(new) #ew has now been sorted and will reamin that way
+newso = new.sort()
+print(newso) # returns NONE
+# new.sort(reverse=True)
+# print(new)
+
+# using sorted - sorted sorts not does not modify the original list nw like sort does
+new2 = [2,4,6,7,5,3,1]
+print(sorted(new2)) # sorted list is outputed
+print(new2) #original unsorted list is iutputed
+print(sorted(new2,reverse=True)) #reerse the sorted list
+
