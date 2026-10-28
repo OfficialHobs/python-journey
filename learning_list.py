@@ -179,17 +179,25 @@ cars = ['lambo', 'ferrari']
 # print(cars.reverse()) #['ferrari', 'lambo']
 
 # sorting the list
-new = [1,3,4,2,5,6,8,7]
-# new.sort()
-# print(new) #ew has now been sorted and will reamin that way
-newso = new.sort()
-print(newso) # returns NONE
-# new.sort(reverse=True)
-# print(new)
+# new = [1,3,4,2,5,6,8,7]
+# # new.sort()
+# # print(new) #ew has now been sorted and will reamin that way
+# newso = new.sort()
+# print(newso) # returns NONE
+# # new.sort(reverse=True)
+# # print(new)
 
-# using sorted - sorted sorts not does not modify the original list nw like sort does
-new2 = [2,4,6,7,5,3,1]
-print(sorted(new2)) # sorted list is outputed
-print(new2) #original unsorted list is iutputed
-print(sorted(new2,reverse=True)) #reerse the sorted list
+# # using sorted - sorted sorts not does not modify the original list nw like sort does
+# new2 = [2,4,6,7,5,3,1]
+# print(sorted(new2)) # sorted list is outputed
+# print(new2) #original unsorted list is iutputed
+# print(sorted(new2,reverse=True)) #reerse the sorted list
 
+fruits = ['banana', 'mango', 'apple', 'orange', 'grape']
+# fruits.sort() 
+# print(fruits.sort()) #genrally this returns None beause it only modifies the var 'fruits'
+print(fruits) # now this will return the sorted fruits that was atually modified
+
+# print(sorted(fruits)) #this is a method that only modifies the fruits in print but not the main var 'fruit'
+arrange = sorted(fruits) #this is another ethod to do 'sorted' method
+print(arrange) #now you see, a new sorted fruit is ccreate
