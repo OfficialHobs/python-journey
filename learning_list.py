@@ -158,9 +158,9 @@
 # joining a list
 # we can joing by concatenating list + list
 
-name = ['benny', 'jaes']
-ages = [45, 34]
-cars = ['lambo', 'ferrari']
+# name = ['benny', 'jaes']
+# ages = [45, 34]
+# cars = ['lambo', 'ferrari']
 # joinlist = name + ages + cars
 # print(joinlist)
 
@@ -193,11 +193,80 @@ cars = ['lambo', 'ferrari']
 # print(new2) #original unsorted list is iutputed
 # print(sorted(new2,reverse=True)) #reerse the sorted list
 
-fruits = ['banana', 'mango', 'apple', 'orange', 'grape']
-# fruits.sort() 
-# print(fruits.sort()) #genrally this returns None beause it only modifies the var 'fruits'
-print(fruits) # now this will return the sorted fruits that was atually modified
+# fruits = ['banana', 'mango', 'apple', 'orange', 'grape']
+# # fruits.sort() 
+# # print(fruits.sort()) #genrally this returns None beause it only modifies the var 'fruits'
+# print(fruits) # now this will return the sorted fruits that was atually modified
 
-# print(sorted(fruits)) #this is a method that only modifies the fruits in print but not the main var 'fruit'
-arrange = sorted(fruits) #this is another ethod to do 'sorted' method
-print(arrange) #now you see, a new sorted fruit is ccreate
+# # print(sorted(fruits)) #this is a method that only modifies the fruits in print but not the main var 'fruit'
+# arrange = sorted(fruits) #this is another ethod to do 'sorted' method
+# print(arrange) #now you see, a new sorted fruit is ccreate
+
+# exercise
+# delare an empty list
+# empty_list = []
+# # declare a list with or than 5 items
+# item5 = ['cherry', '24', 'sales', 'accountant', 'dark']
+# # find the lenght of your list
+# print(len(item5)) # output =5
+# #get the first item, middle and last item
+# print(item5[0]) #cherry
+# print(item5[2]) #sales
+# last_item = len(item5) - 1
+# print(item5[last_item]) #dark
+
+# # Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
+# mixed_data_type = ['harrold', 22, '170cm', 'single', 'nigeria']
+
+
+# # Declare a list variable named it_companies and assign initial values
+# #  Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+# Print the list using print()
+# print(it_companies)
+# # Print the number of companies in the list
+# print(len(it_companies))
+# # Print the first, middle and last company
+# print([0])
+# print([4])
+# last_company = len(it_companies) -1
+# print(last_company)
+# Print the list after modifying one of the companies
+# it_companies[2] = 'tecno'
+# print(it_companies)
+# # Add an IT company to it_companies
+# it_companies.append('tesla')
+# print(it_companies)
+# Insert an IT company in the middle of the companies list
+# it_companies.insert(3, 'dell')
+# print(it_companies)
+# # Change one of the it_companies names to uppercase (IBM excluded!)
+# it_companies[3] = it_companies[3].upper() #we say the index 3 of it_companies = a modified index 3 
+#                         #therefore it replaces index 3 with a new modified value of index 3 (DELL)
+# print(it_companies)
+# # Join the it_companies with a string '#;  '
+# print('#; '.join(it_companies)) # Facebook#; Google#; Microsoft#; DELL#; Apple#; IBM#; Oracle#; Amazon
+
+# # Check if a certain company exists in the it_companies list.
+# isdellonthelist = 'DELL' in it_companies
+# print(isdellonthelist) #True
+
+# Sort the list using sort() method
+# it_companies.sort()
+# print(it_companies) #['Amazon', 'Apple', 'Facebook', 'Google', 'IBM', 'Microsoft', 'Oracle'] sorted a-z
+
+# # Reverse the list in descending order using reverse() method
+# it_companies.reverse()
+# print(it_companies) # ['Oracle', 'Microsoft', 'IBM', 'Google', 'Facebook', 'Apple', 'Amazon']
+
+# Slice out the first 3 companies from the list
+firstslice = it_companies[3:]
+print(firstslice) # ['Google', 'Facebook', 'Apple', 'Amazon']
+
+# Slice out the last 3 companies from the list
+lastslice = it_companies[0:4]
+print(lastslice) # ['Facebook', 'Google', 'Microsoft', 'Apple']
+
+# Slice out the middle IT company or companies from the list
+print(it_companies[3:4]) #using the slice method to ouptut the center IT company 'apple'
+print(it_companies.remove('Apple'))
