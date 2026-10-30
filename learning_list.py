@@ -260,13 +260,301 @@ it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Am
 # print(it_companies) # ['Oracle', 'Microsoft', 'IBM', 'Google', 'Facebook', 'Apple', 'Amazon']
 
 # Slice out the first 3 companies from the list
-firstslice = it_companies[3:]
-print(firstslice) # ['Google', 'Facebook', 'Apple', 'Amazon']
+# firstslice = it_companies[3:]
+# print(firstslice) # ['Google', 'Facebook', 'Apple', 'Amazon']
 
-# Slice out the last 3 companies from the list
-lastslice = it_companies[0:4]
-print(lastslice) # ['Facebook', 'Google', 'Microsoft', 'Apple']
+# # Slice out the last 3 companies from the list
+# lastslice = it_companies[0:4]
+# print(lastslice) # ['Facebook', 'Google', 'Microsoft', 'Apple']
 
-# Slice out the middle IT company or companies from the list
-print(it_companies[3:4]) #using the slice method to ouptut the center IT company 'apple'
-print(it_companies.remove('Apple'))
+# # Slice out the middle IT company or companies from the list
+# print(it_companies[3:4]) #using the slice method to ouptut the center IT company 'apple'
+
+
+# # Remove the first IT company from the list
+# it_companies.remove('Facebook')
+# print(it_companies) # ['Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+
+# # Remove the middle IT company or companies from the list
+# it_companies.remove('Apple')
+# print(it_companies)
+
+# Remove the last IT company from the list
+# it_companies.remove('Amazon')
+# print(it_companies) # ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle']
+
+# #Remove all IT companies from the list
+# it_companies.clear()
+# print(it_companies) # []
+
+# del(it_companies)
+# print(it_companies) # Expected output = error
+
+# join the list
+# front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+# back_end = ['Node','Express', 'MongoDB']
+# joinedlist = front_end + back_end
+# print(joinedlist) # ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'Express', 'MongoDB']
+
+# # After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack,
+# #  then insert Python and SQL after Redux.
+# full_stack = joinedlist.copy()
+# print(full_stack) # ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'Express', 'MongoDB']
+# full_stack.insert(5, 'Python')
+# full_stack.insert(6, 'SQL')
+# print(full_stack) # ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Python', 'SQL', 'Node', 'Express', 'MongoDB']
+
+
+# The following is a list of 10 students ages:
+
+# ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+# # Sort the list and find the min and max age
+# ages.sort() #sorts the list from smallest to largest
+# minimum = ages[0] #first index since it is sorted a;ready
+# maximum = ages [-1] #last index since it is sorted already
+# # print(f"minimum: {minimum}") #19
+# # print(f"maximum: {maximum}") #26
+
+# # Add the min age and the max age again to the list
+# ages.append(minimum)
+# ages.append(maximum)
+# print(ages) # [19, 19, 20, 22, 24, 24, 24, 25, 25, 26, 19, 26]
+
+# # Find the median age (one middle item or two middle items divided by two)
+# median_age = int((ages[5] + ages[6]) / 2)
+# print(median_age) # 24
+
+# # Find the average age (sum of all items divided by their number )
+# average_age = sum(ages) / len(ages)
+# print("Average age: ",average_age)
+
+# # or we can do it manually and say
+# total_age = 0
+# total_count = 0
+# for age in ages:
+#     total_age += age
+#     total_count += 1
+# avg_age = total_age / total_count
+# print(f"avg age = {avg_age}")
+
+# # Find the range of the ages (max minus min)
+# ranges = maximum - minimum
+# print(f"range = {ranges}")
+
+# # Compare the value of (min - average) and (max - average), use abs() method
+# minav = minimum -average_age
+# maxav = maximum - average_age
+# print(abs(minav-maxav)) #-7 ---- abs(-7) = 7
+
+# Find the middle country(ies) in the countries list
+# countries = [
+#   'Afghanistan',
+#   'Albania',
+#   'Algeria',
+#   'Andorra',
+#   'Angola',
+#   'Antigua and Barbuda',
+#   'Argentina',
+#   'Armenia',
+#   'Australia',
+#   'Austria',
+#   'Azerbaijan',
+#   'Bahamas',
+#   'Bahrain',
+#   'Bangladesh',
+#   'Barbados',
+#   'Belarus',
+#   'Belgium',
+#   'Belize',
+#   'Benin',
+#   'Bhutan',
+#   'Bolivia',
+#   'Bosnia and Herzegovina',
+#   'Botswana',
+#   'Brazil',
+#   'Brunei',
+#   'Bulgaria',
+#   'Burkina Faso',
+#   'Burundi',
+#   'Cabo Verde',
+#   'Cambodia',
+#   'Cameroon',
+#   'Canada',
+#   'Central African Republic',
+#   'Chad',
+#   'Chile',
+#   'China',
+#   'Colombia',
+#   'Comoros',
+#   'Congo, Democratic Republic of the',
+#   'Congo, Republic of the',
+#   'Costa Rica',
+#   "Côte d'Ivoire",
+#   'Croatia',
+#   'Cuba',
+#   'Cyprus',
+#   'Czech Republic',
+#   'Denmark',
+#   'Djibouti',
+#   'Dominica',
+#   'Dominican Republic',
+#   'East Timor (Timor-Leste)',
+#   'Ecuador',
+#   'Egypt',
+#   'El Salvador',
+#   'Equatorial Guinea',
+#   'Eritrea',
+#   'Estonia',
+#   'Eswatini',
+#   'Ethiopia',
+#   'Fiji',
+#   'Finland',
+#   'France',
+#   'Gabon',
+#   'Gambia',
+#   'Georgia',
+#   'Germany',
+#   'Ghana',
+#   'Greece',
+#   'Grenada',
+#   'Guatemala',
+#   'Guinea',
+#   'Guinea-Bissau',
+#   'Guyana',
+#   'Haiti',
+#   'Honduras',
+#   'Hungary',
+#   'Iceland',
+#   'India',
+#   'Indonesia',
+#   'Iran',
+#   'Iraq',
+#   'Ireland',
+#   'Israel',
+#   'Italy',
+#   'Jamaica',
+#   'Japan',
+#   'Jordan',
+#   'Kazakhstan',
+#   'Kenya',
+#   'Kiribati',
+#   'Korea, North',
+#   'Korea, South',
+#   'Kuwait',
+#   'Kyrgyzstan',
+#   'Laos',
+#   'Latvia',
+#   'Lebanon',
+#   'Lesotho',
+#   'Liberia',
+#   'Libya',
+#   'Liechtenstein',
+#   'Lithuania',
+#   'Luxembourg',
+#   'Madagascar',
+#   'Malawi',
+#   'Malaysia',
+#   'Maldives',
+#   'Mali',
+#   'Malta',
+#   'Marshall Islands',
+#   'Mauritania',
+#   'Mauritius',
+#   'Mexico',
+#   'Micronesia',
+#   'Moldova',
+#   'Monaco',
+#   'Mongolia',
+#   'Montenegro',
+#   'Morocco',
+#   'Mozambique',
+#   'Myanmar',
+#   'Namibia',
+#   'Nauru',
+#   'Nepal',
+#   'Netherlands',
+#   'New Zealand',
+#   'Nicaragua',
+#   'Niger',
+#   'Nigeria',
+#   'North Macedonia',
+#   'Norway',
+#   'Oman',
+#   'Pakistan',
+#   'Palau',
+#   'Palestine',
+#   'Panama',
+#   'Papua New Guinea',
+#   'Paraguay',
+#   'Peru',
+#   'Philippines',
+#   'Poland',
+#   'Portugal',
+#   'Qatar',
+#   'Romania',
+#   'Russia',
+#   'Rwanda',
+#   'Saint Kitts and Nevis',
+#   'Saint Lucia',
+#   'Saint Vincent and the Grenadines',
+#   'Samoa',
+#   'San Marino',
+#   'Sao Tome and Principe',
+#   'Saudi Arabia',
+#   'Senegal',
+#   'Serbia',
+#   'Seychelles',
+#   'Sierra Leone',
+#   'Singapore',
+#   'Slovakia',
+#   'Slovenia',
+#   'Solomon Islands',
+#   'Somalia',
+#   'South Africa',
+#   'South Sudan',
+#   'Spain',
+#   'Sri Lanka',
+#   'Sudan',
+#   'Suriname',
+#   'Sweden',
+#   'Switzerland',
+#   'Syria',
+#   'Tajikistan',
+#   'Tanzania',
+#   'Thailand',
+#   'Togo',
+#   'Tonga',
+#   'Trinidad and Tobago',
+#   'Tunisia',
+#   'Turkey',
+#   'Turkmenistan',
+#   'Tuvalu',
+#   'Uganda',
+#   'Ukraine',
+#   'United Arab Emirates',
+#   'United Kingdom',
+#   'United States',
+#   'Uruguay',
+#   'Uzbekistan',
+#   'Vanuatu',
+#   'Vatican City',
+#   'Venezuela',
+#   'Vietnam',
+#   'Yemen',
+#   'Zambia',
+#   'Zimbabwe'
+# ] # Find the middle country(ies) in the countries list
+# print(len(countries))
+# halflist = len(countries) // 2
+# print(halflist)
+# print("middle country: ",countries[halflist]) #Lesotho [97] ----0-97
+
+# # Divide the countries list into two equal lists if it is even if not one more country for the first half.
+# print(countries[0:97])
+# print(countries[97:195])
+
+# ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark'].
+#  Unpack the first three countries and the rest as scandic countries.
+country = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+first_country,second_country,third_country,*remainder_country = country
+print("the first three is: ",first_country,second_country,third_country,'\n' "remainder: ",*remainder_country)
