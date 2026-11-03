@@ -116,8 +116,8 @@
 # Check if an item exists in tuple:
 
 # Check if 'Estonia' is a nordic country
-nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
-print('Estonia' in nordic_countries) #false
+# nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+# print('Estonia' in nordic_countries) #false
 
-# Check if 'Iceland' is a nordic country
-print('Iceland' in nordic_countries) #true
+# # Check if 'Iceland' is a nordic country
+# print('Iceland' in nordic_countries) #true
