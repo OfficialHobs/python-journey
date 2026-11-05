@@ -21,7 +21,10 @@ Names = {'Aaron', 'Hero', 'Tyler', 'Mark', 'Jacob', 'King'}
 # Names.discard('garry') # .disard() ---this doesnt return error, 
 # # it only cares about deleteing the item ---whether it is found or not
 # print(Names)
-# Names.pop() #removes a random item ---in the set
+
+# # Names.pop() #removes a random item ---in the set and returns that item to you
+# popout = Names.pop() #for example
+# print(popout)
 # print(Names)
 
 # if you want to know the exact item .pop() removed--
@@ -51,3 +54,13 @@ Names = {'Aaron', 'Hero', 'Tyler', 'Mark', 'Jacob', 'King'}
 # print(listm) #expected output {set items}
 
 # joining sets
+# We can join two sets using the union() or update() method or | symbol
+set1 = {'chain', 'rakash', 'jelly', 'fan'}
+set2 = {'karl', 'hello', 'burner', 'fan'} # i intentionally add fan to see if .union removes one of it
+# print(set1.union(set2)) # as suspected a U b gives unique items as combination and removes 1 'fan'
+# # we can also say
+# print(set1 | set2)
+
+# # adding a set to a set. same as union though but we use .update() like prev
+# print(set1.update(set2)) #this will give output : none because it is saying 
+#                         # 'do -action' to these, same as .remove
