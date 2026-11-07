@@ -118,9 +118,9 @@ Names = {'Aaron', 'Hero', 'Tyler', 'Mark', 'Jacob', 'King'}
 # disjoint of two sets
 # if two sets have entirely different items, we say they are disjoint of each other
 # .isdisjoint()
-set1 = {0,2,4,6,8}
-set2 = {1,3,5,7,9}
-set3 = {1,2,3,4,5}
-print(set1.isdisjoint(set2)) # true
-print(set2.isdisjoint(set3)) #false {1,3,5}
-print(set3.isdisjoint(set1)) #false {2,4}
+# set1 = {0,2,4,6,8}
+# set2 = {1,3,5,7,9}
+# set3 = {1,2,3,4,5}
+# print(set1.isdisjoint(set2)) # true
+# print(set2.isdisjoint(set3)) #false {1,3,5}
+# print(set3.isdisjoint(set1)) #false {2,4}
