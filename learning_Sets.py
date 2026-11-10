@@ -124,3 +124,31 @@ set3 = {1,2,3,4,5}
 print(set1.isdisjoint(set2)) # true
 print(set2.isdisjoint(set3)) #false {1,3,5}
 print(set3.isdisjoint(set1)) #false {2,4}
+
+#  exercise
+# sets
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+
+# Find the length of the set it_companies
+print(len(it_companies))
+# Add 'Twitter' to it_companies
+# it_companies.update({'Twitter'}) # in the arguement pass - {'Twitter'} to update a set with another set
+it_companies.add('Twitter') #or we use this 
+print(it_companies)
+# Insert multiple IT companies at once to the set it_companies
+it_companies.update({'Tesla', 'Paystack'}) # so i noticed we can use {} as arguement to add multiple
+                                           # sets at once
+print(it_companies)
+# Remove one of the companies from the set it_companies
+it_companies.remove('Google')
+print(it_companies)
+# What is the difference between remove and discard
+#  remove returns an error if the item to be removed is not found
+# discard doesnt return an error whether the item is in the set or not
+
+# Join A and B
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+joint = A.union(B)
+print(joint) #output: {19, 20, 22, 24, 25, 26, 27, 28} - set contains only unique values
