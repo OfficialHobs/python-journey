@@ -118,37 +118,91 @@ Names = {'Aaron', 'Hero', 'Tyler', 'Mark', 'Jacob', 'King'}
 # disjoint of two sets
 # if two sets have entirely different items, we say they are disjoint of each other
 # .isdisjoint()
-set1 = {0,2,4,6,8}
-set2 = {1,3,5,7,9}
-set3 = {1,2,3,4,5}
-print(set1.isdisjoint(set2)) # true
-print(set2.isdisjoint(set3)) #false {1,3,5}
-print(set3.isdisjoint(set1)) #false {2,4}
+# set1 = {0,2,4,6,8}
+# set2 = {1,3,5,7,9}
+# set3 = {1,2,3,4,5}
+# print(set1.isdisjoint(set2)) # true
+# print(set2.isdisjoint(set3)) #false {1,3,5}
+# print(set3.isdisjoint(set1)) #false {2,4}
 
 #  exercise
 # sets
 it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
 
 # Find the length of the set it_companies
-print(len(it_companies))
-# Add 'Twitter' to it_companies
-# it_companies.update({'Twitter'}) # in the arguement pass - {'Twitter'} to update a set with another set
-it_companies.add('Twitter') #or we use this 
-print(it_companies)
-# Insert multiple IT companies at once to the set it_companies
-it_companies.update({'Tesla', 'Paystack'}) # so i noticed we can use {} as arguement to add multiple
-                                           # sets at once
-print(it_companies)
-# Remove one of the companies from the set it_companies
-it_companies.remove('Google')
-print(it_companies)
+# print(len(it_companies))
+# # Add 'Twitter' to it_companies
+# # it_companies.update({'Twitter'}) # in the arguement pass - {'Twitter'} to update a set with another set
+# it_companies.add('Twitter') #or we use this 
+# print(it_companies)
+# # Insert multiple IT companies at once to the set it_companies
+# it_companies.update({'Tesla', 'Paystack'}) # so i noticed we can use {} as arguement to add multiple
+#                                            # sets at once
+# print(it_companies)
+# # Remove one of the companies from the set it_companies
+# it_companies.remove('Google')
+# print(it_companies)
 # What is the difference between remove and discard
 #  remove returns an error if the item to be removed is not found
 # discard doesnt return an error whether the item is in the set or not
 
-# Join A and B
+
 A = {19, 22, 24, 20, 25, 26}
 B = {19, 22, 20, 25, 26, 24, 28, 27}
-age = [22, 19, 24, 25, 26, 24, 25, 24]
-joint = A.union(B)
-print(joint) #output: {19, 20, 22, 24, 25, 26, 27, 28} - set contains only unique values
+
+# Join A and B
+# joint = A.union(B)
+# print(joint) #output: {19, 20, 22, 24, 25, 26, 27, 28} - set contains only unique values
+# interset = A.intersection(B)
+# print(interset) #{19, 20, 22, 24, 25, 26}
+# print(A.issubset(B)) # True
+# # Are A and B disjoint sets
+# print(A.isdisjoint(B)) # False - they dont have entirely different items - they have atleat one similar item
+
+# Join A with B and B with A
+# A.update(B)
+# B.update(A)
+# print(A)
+# print(B)
+
+# What is the symmetric difference between A and B
+# print(A.symmetric_difference(B)) #{27, 28}
+
+# # Delete the sets completely
+# del A
+# del B 
+# print(A,B) #expected output: error - var not defined
+
+# Convert the ages to a set and compare the length of the list and the set, which one is bigger?
+# age = [22, 19, 24, 25, 26, 24, 25, 24]
+# new_set = set(age)
+# agel = len(age)
+# setl = len(new_set) 
+# print(agel)
+# print(setl)
+# mini = min(agel,setl)
+# maxi = max(agel,setl)
+# if maxi == agel:
+#     print("max number:list")
+# else:
+#     print("max number:set")
+
+# Explain the difference between the following data types: string, list, tuple and set
+# string - values in string are always in quotes and most of the time are letters
+# list - can take all forms of data types and is mutable
+# set - contains unique items only
+# tuple - contains data of the same type == array
+
+
+# I am a teacher and I love to inspire and teach people. 
+# How many unique words have been used in the sentence?
+#  Use the split methods and set to get the unique words.
+
+word = 'I am a teacher and I love to inspire and teach people. '
+newword = word.split()
+# one thing i noticed is that .split 'DO', but it doesnt permanently affect the original variable data
+print(newword)
+newset = set(newword)
+unique_words = len(newset)
+print(newset)
+print(f'total unique words: {unique_words}')
