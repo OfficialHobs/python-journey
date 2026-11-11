@@ -25,4 +25,19 @@ Biography = {
 }
 
 # length of a dictionary
-print(len(Biography)) #6
+# print(len(Biography)) #6
+
+# accessing a dictionary item
+# We can access Dictionary items by referring to its key name. ie [''children]
+# print(Biography['Children']) # {'1st_born': {'name': 'quil', 'age': 15}, '2nd_born': {'name': 'Rufus', 'age': '12'}}
+# print(Biography['Children']['2nd_born']) # {'name': 'Rufus', 'age': '12'}
+# print(Biography['Children']['2nd_born']['name']) # Rufus
+# print(Biography['Skills'][2]) # Java
+
+# Accessing an item by key name raises an error if the key does not exist. 
+# To avoid this error first we have to check if a key exist or we can use the get method. 
+# The get method returns None, which is a NoneType object data type, if the key does not exist.
+
+print(Biography.get('Children')) # {'1st_born': {'name': 'quil', 'age': 15}, '2nd_born': {'name': 'Rufus', 'age': '12'}}
+print(Biography.get('Networth')) # None
+print(Biography.get('Children''1st_born'))
