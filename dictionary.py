@@ -19,7 +19,7 @@ Biography = {
         },
         '2nd_born' : {
             'name': 'Rufus',
-            'age' : '12'
+            'age' : 12
         }
     }
 }
@@ -38,6 +38,26 @@ Biography = {
 # To avoid this error first we have to check if a key exist or we can use the get method. 
 # The get method returns None, which is a NoneType object data type, if the key does not exist.
 
-print(Biography.get('Children')) # {'1st_born': {'name': 'quil', 'age': 15}, '2nd_born': {'name': 'Rufus', 'age': '12'}}
-print(Biography.get('Networth')) # None
-print(Biography.get('Children''1st_born'))
+# print(Biography.get('Children')) # {'1st_born': {'name': 'quil', 'age': 15}, '2nd_born': {'name': 'Rufus', 'age': '12'}}
+# print(Biography.get('Networth')) # None
+# print(Biography.get('Children'))
+
+# # chained retrieval .get(), this is an advanced method i had to search up
+# print(Biography.get('Children',{}).get('1st_born')) # chain .get
+# print(Biography.get('Children',{}).get('1st_born',{}).get('name')) # quil
+# print(Biography.get('Children',{}).get('1st_born',{}).get('age')) # 15
+
+# adding an item to a dictionary
+dict1 = {'key1' : 'ppp', 'key2' : 'hhh', 'key3' : 'kkk', 'result' : ['first', 'second', 'third']}
+# dict1['key4'] = 'rrr'
+# # dict1['key5'].append('uuu') #error
+# dict1['result'].append('fourth')
+# print(dict1)
+
+# # modifying a dictionary
+# dict1['key1'] = 'lll'
+# print(dict1) #{'key1': 'lll', 'key2': 'hhh', 'key3': 'kkk', 'result': ['first', 'second', 'third', 'fourth'], 'key4': 'rrr'}
+
+# checking keys or items in a dictionary
+print('key3'in dict1) #True
+print('key9' in dict1) #False
