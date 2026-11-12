@@ -76,14 +76,45 @@ dict1 = {'key1' : 'ppp', 'key2' : 'hhh', 'key3' : 'kkk', 'result' : ['first', 's
 # del Building['house1'] #deletes house1
 # print(Building)
 
-# testing testing
-Building = {
-    'house1' : {
-        'type':'duplex', 
-        'address':'dart street'}, 
-    'house2' : 'mansion', 
-    'house3' : 'bungalow'}
-print(Building)
-# Building.popitem('house1',{}).popitem('type')
-del Building['house1']['type']
-print(Building)
+# # testing testing
+# Building = {
+#     'house1' : {
+#         'type':'duplex', 
+#         'address':'dart street'}, 
+#     'house2' : 'mansion', 
+#     'house3' : 'bungalow'}
+# print(Building)
+# # Building.popitem('house1',{}).popitem('type')
+# del Building['house1']['type'] # output: as expected
+# print(Building)
+
+# changing dictionary to list
+# we use .item()
+# dictionary = {'animal1': 'panda', 'animal2':'rhino', 'animal3':'snake'}
+# list_item = dictionary.items()
+# print(list_item) # dict_items([('animal1', 'panda'), ('animal2', 'rhino'), ('animal3', 'snake')])
+
+# # clearing a dictionary
+# dictionary.clear() #none
+# print(dictionary) #{}
+
+# # Deleting a Dictionary
+# dictionary = {'animal1': 'panda', 'animal2':'rhino', 'animal3':'snake'}
+# del dictionary
+# print(dictionary) # expected output = error- not defined
+
+# copying a dictionary
+# dictionary = {'animal1': 'panda', 'animal2':'rhino', 'animal3':'snake'}
+# copy_dict = dictionary.copy()
+# print(dictionary,copy_dict)
+# print('is the same?:',dictionary == copy_dict) #True
+
+# #  getting all keys in a dictionary ---- as a list 
+# dictionary = {'animal1': 'panda', 'animal2':'rhino', 'animal3':'snake'}
+# keys = dictionary.keys() # this gets the items name or keys
+# print(keys) # dict_keys(['animal1', 'animal2', 'animal3'])
+
+# Getting all Dictionary Values ----as a List
+dictionary = {'animal1': 'panda', 'animal2':'rhino', 'animal3':'snake'}
+values = dictionary.values()
+print(values) #dict_values(['panda', 'rhino', 'snake'])
