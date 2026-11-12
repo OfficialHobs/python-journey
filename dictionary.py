@@ -58,6 +58,32 @@ dict1 = {'key1' : 'ppp', 'key2' : 'hhh', 'key3' : 'kkk', 'result' : ['first', 's
 # dict1['key1'] = 'lll'
 # print(dict1) #{'key1': 'lll', 'key2': 'hhh', 'key3': 'kkk', 'result': ['first', 'second', 'third', 'fourth'], 'key4': 'rrr'}
 
-# checking keys or items in a dictionary
-print('key3'in dict1) #True
-print('key9' in dict1) #False
+# # checking keys or items in a dictionary
+# print('key3'in dict1) #True
+# print('key9' in dict1) #False
+
+# removing key or items in a dictionary
+# we use .pop() to remove a certain item .pop(item)
+# Building = {'house1' : 'duplex', 'house2' : 'mansion', 'house3' : 'bungalow'}
+# # Building.pop() # error, unlike list, using .pop() require you to pass an argument ('item')
+# Building.pop('house2')
+# print(Building)
+# #  --- if you dont want ot pass an argument
+# Building = {'house1' : 'duplex', 'house2' : 'mansion', 'house3' : 'bungalow'}
+# Building.popitem() # removes the last item
+# print(Building)
+# # using del --- another way to remove an item in dictionary
+# del Building['house1'] #deletes house1
+# print(Building)
+
+# testing testing
+Building = {
+    'house1' : {
+        'type':'duplex', 
+        'address':'dart street'}, 
+    'house2' : 'mansion', 
+    'house3' : 'bungalow'}
+print(Building)
+# Building.popitem('house1',{}).popitem('type')
+del Building['house1']['type']
+print(Building)
