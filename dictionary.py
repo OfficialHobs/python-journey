@@ -48,10 +48,10 @@ Biography = {
 # print(Biography.get('Children',{}).get('1st_born',{}).get('age')) # 15
 
 # adding an item to a dictionary
-dict1 = {'key1' : 'ppp', 'key2' : 'hhh', 'key3' : 'kkk', 'result' : ['first', 'second', 'third']}
-# dict1['key4'] = 'rrr'
-# # dict1['key5'].append('uuu') #error
-# dict1['result'].append('fourth')
+# dict1 = {'key1' : 'ppp', 'key2' : 'hhh', 'key3' : 'kkk', 'result' : ['first', 'second', 'third']}
+# dict1['key4'] = 'rrr' # this add a new key to the list
+# dict1['key5'].append('uuu') #error - why because it is updating 'key5' which has not been created yet
+# dict1['result'].append('fourth') # success because it is updating result which has been created already
 # print(dict1)
 
 # # modifying a dictionary
@@ -115,6 +115,63 @@ dict1 = {'key1' : 'ppp', 'key2' : 'hhh', 'key3' : 'kkk', 'result' : ['first', 's
 # print(keys) # dict_keys(['animal1', 'animal2', 'animal3'])
 
 # Getting all Dictionary Values ----as a List
-dictionary = {'animal1': 'panda', 'animal2':'rhino', 'animal3':'snake'}
-values = dictionary.values()
-print(values) #dict_values(['panda', 'rhino', 'snake'])
+# dictionary = {'animal1': 'panda', 'animal2':'rhino', 'animal3':'snake'}
+# values = dictionary.values()
+# print(values) #dict_values(['panda', 'rhino', 'snake'])
+
+
+# exercise
+
+# Create an empty dictionary called dog
+dog = dict()
+# # Add name, color, breed, legs, age to the dog dictionary
+# dog['name']=  'rufus'  
+# dog['color'] =  'black' 
+# dog['breed'] = 'pitbull'
+# dog['legs'] = 4
+# dog['age'] = 3
+# print(dog)
+
+# # or simply say---
+# dog.update({'name': 'rufus', 'color': 'black', 'breed': 'pitbull', 'legs': 4, 'age': 3})
+# print(dog)
+
+# Create a student dictionary and add first_name, 
+# last_name, gender, age, marital status, skills, 
+# country, city and address as keys for the dictionary
+student = {
+    'first_name':'john', 
+    'last_name': 'doe', 
+    'gender':'male', 
+    'age':23, 
+    'marital status':'engaged', 
+    'skills':['drawing', 'dancing', 'song writing'],
+    'country': 'japan', 
+    'city':'kyoto', 
+    'address': 'kyoto, Japan'}
+# Get the length of the student dictionary
+# print(len(student))
+# # Get the value of skills and check the data type, it should be a list
+# value_skill = student['skills']
+# print(value_skill) # ['drawing', 'dancing', 'song writing']
+# print(type(value_skill)) # <class 'list'>
+# # Modify the skills values by adding one or two skills
+# student['skills'].append('HTML')
+# student['skills'].append('CSS')
+# print(student) # updated
+
+# Get the dictionary keys as a list
+print(student.keys())
+
+# Get the dictionary values as a list
+print(student.values())
+
+# Change the dictionary to a list of tuples using items() method
+print(student.items())
+
+# Delete one of the items in the dictionary
+del student['skills']
+print(student)
+
+# Delete one of the dictionaries
+del student
