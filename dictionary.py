@@ -161,17 +161,17 @@ student = {
 # print(student) # updated
 
 # Get the dictionary keys as a list
-print(student.keys())
+# print(student.keys())
 
-# Get the dictionary values as a list
-print(student.values())
+# # Get the dictionary values as a list
+# print(student.values())
 
-# Change the dictionary to a list of tuples using items() method
-print(student.items())
+# # Change the dictionary to a list of tuples using items() method
+# print(student.items())
 
-# Delete one of the items in the dictionary
-del student['skills']
-print(student)
+# # Delete one of the items in the dictionary
+# del student['skills']
+# print(student)
 
-# Delete one of the dictionaries
-del student
+# # Delete one of the dictionaries
+# del student
