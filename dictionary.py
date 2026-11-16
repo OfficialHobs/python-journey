@@ -173,5 +173,5 @@ student = {
 # del student['skills']
 # print(student)
 
-# # Delete one of the dictionaries
-# del student
+# Delete one of the dictionaries
+del student
