@@ -29,14 +29,30 @@
 # print('true') if code == 'world hello'else print('inverse')
 
 # Nested Conditions
+# a = 10
+# if a // 2 == 1: # if the first condition is false, it will skip the nested 'if' and go to the 'elif'
+#     if a % 2 == 0:
+#         print('a is 10') #but if the 1st 'if' is true and this is true--
+#     else:
+#         print('a is odd number') # if the 1st 'if' is true and the 2nd is false--
+# elif a == 15:
+#     print('no = 15') #unless this is true, iteration moves to 'else'
+# else:
+#     print('not defined') #output
+
+
+# if condition with logical operator
+# We can avoid writing nested condition by using logical operator and.
+# b = 20
+# if b > 12 and 12 < b:
+#     print('true condition')
+# another example
 a = 10
-if a // 2 == 1: # if the first condition is false, it will skip the nested 'if' and go to the 'elif'
-    if a % a == 0:
-        print('a is 10') #but if the 1st 'if' is true and this is true--
-    else:
-        print('a is odd number') # if the 1st 'if' is true and the 2nd is false--
-elif a == 15:
-    print('no = 15') #unless this is true, iteration moves to 'else'
+if a // 2 == 1 and  a % 2 == 0:
+        print('a is 10') 
+elif a // 2 == 5 and a % 2 == 1:
+    print('a is odd number') # if the 1st 'if' is true and the 2nd is false--
+elif a == 10:
+    print('no = 10') #unless this is true, iteration moves to 'else'
 else:
     print('not defined') #output
-    
