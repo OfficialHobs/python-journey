@@ -46,13 +46,21 @@
 # b = 20
 # if b > 12 and 12 < b:
 #     print('true condition')
+# -----------------------------------
 # another example
-a = 10
-if a // 2 == 1 and  a % 2 == 0:
-        print('a is 10') 
-elif a // 2 == 5 and a % 2 == 1:
-    print('a is odd number') # if the 1st 'if' is true and the 2nd is false--
-elif a == 10:
-    print('no = 10') #unless this is true, iteration moves to 'else'
+# a = 10
+# if a // 2 == 1 and  a % 2 == 0:
+#         print('a is 10') 
+# elif a // 2 == 5 and a % 2 == 1:
+#     print('a is odd number') # if the 1st 'if' is true and the 2nd is false--
+# elif a == 10:
+#     print('no = 10') #unless this is true, iteration moves to 'else'
+# else:
+#     print('not defined') #output
+
+# If and Or Logical Operators
+d = 10
+if d == 5 or d % 2 == 0:
+    print('d is even or 10') # expected output
 else:
-    print('not defined') #output
+    print('d is odd or 11')
