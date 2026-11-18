@@ -78,3 +78,20 @@
 #     required = 18 - age
 #     # print('wait till you are: ', required)
 #     print(f'wait till you are {18 - age}')
+
+# Compare the values of my_age and your_age using if … else. 
+# Who is older (me or you)? Use input(“Enter your age: ”) to get the age as input. 
+# You can use a nested condition to print 'year' for 1 year difference in age, 
+# 'years' for bigger differences, and a custom text if my_age = your_age. Output:
+
+myAge = 22
+yourAge = int(input('enter your age:'))
+if myAge > yourAge:
+    if myAge - yourAge == 1:
+        print('i am older by a year')
+    elif myAge - yourAge > 1:
+        print(f'i am older by {myAge - yourAge} years')
+elif myAge == yourAge:
+    print('we are age mates')
+else:
+    print('your are older')
