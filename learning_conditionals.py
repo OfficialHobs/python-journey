@@ -59,8 +59,22 @@
 #     print('not defined') #output
 
 # If and Or Logical Operators
-d = 10
-if d == 5 or d % 2 == 0:
-    print('d is even or 10') # expected output
-else:
-    print('d is odd or 11')
+# d = 10
+# if d == 5 or d % 2 == 0:
+#     print('d is even or 10') # expected output
+# else:
+#     print('d is odd or 11')
+
+# Exercise
+# Get user input using input(“Enter your age: ”).  
+# If user is 18 or older, give feedback: You are old enough to drive.
+# If below 18 give feedback to wait for the missing amount of years. Output:
+
+
+# age = int(input("Enter your age: "))
+# if age >= 18:
+#     print('You are old enough to drive.')
+# else:
+#     required = 18 - age
+#     # print('wait till you are: ', required)
+#     print(f'wait till you are {18 - age}')
