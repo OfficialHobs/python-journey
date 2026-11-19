@@ -118,17 +118,139 @@
 # 70-79, C
 # 60-69, D
 # 0-59, F
-Score = int(input('Enter your score: '))
+# Score = int(input('Enter your score: '))
 
-if Score >= 90 and Score <= 100:
-    print('Grade: A')
-elif Score >= 80 and Score <= 89:
-    print('Grade: B')
-elif Score >= 70 and Score <= 79:
-    print('Grade: C')
-elif Score >= 60 and Score <= 69:
-    print('Grade: D')
-elif Score >= 0 and Score <= 59:
-    print('Grade: F')
-else:
-    print('invalid Score!')
+# if Score >= 90 and Score <= 100:
+#     print('Grade: A')
+# elif Score >= 80 and Score <= 89:
+#     print('Grade: B')
+# elif Score >= 70 and Score <= 79:
+#     print('Grade: C')
+# elif Score >= 60 and Score <= 69:
+#     print('Grade: D')
+# elif Score >= 0 and Score <= 59:
+#     print('Grade: F')
+# else:
+#     print('invalid Score!')
+# ------------------------------------------------------------------------------------------
+
+# Get the month from user input then check if the season is Autumn, Winter, Spring or Summer. 
+# If the user input is: September, October or November, the season is Autumn. 
+# December, January or February, the season is Winter. 
+# March, April or May, the season is Spring June, July or August, the season is Summer
+
+# Month = input('Enter a month: ').strip().capitalize() # this strips any space and 
+# #                                           always capitalize the first alphabet the use wrote
+# #                                      so if the user type all in small letter, 
+# #                                      the first letter will automatically be changed 
+# #                                      to caps so as to match the format in our list 
+
+# if Month in ['September', 'October', 'November']:
+#     print('the season is Autumn')
+# elif Month in ['December', 'January', 'February']:
+#     print('the season is winter')
+# elif Month in ['March', 'April', 'May']:
+#     print('the season is spring')
+# elif Month in ['June', 'July', 'August']:
+#     print('the season is Summer')
+# else:
+#     print('invalid month!')
+# -------------------------------------------------------------------------------------------------
+
+
+# If a fruit doesn't exist in the list add the fruit to the list and print the modified list. 
+# If the fruit exists print('That fruit already exist in the list')
+# fruits = ['banana', 'orange', 'mango', 'lemon']
+# print('available fruites are:',' '.join(fruits))
+# new_fruit = input('Enter a new fruit: ').strip().lower() #strip and lower all case, to match existing list 
+# if new_fruit in fruits:
+#     print('That fruit already exist in the list!')
+# else:
+#     fruits.append(new_fruit)
+#     print('Fruit successfully added!')
+#     print(' '.join(fruits))
+# ------------------------------------------------------------------------------------------------------
+
+#  Check if the person dictionary has skills key, if so print out the middle skill in the skills list.
+#  Check if the person dictionary has skills key, if so check if the person has 'Python' skill and print out the result.
+#  If a person skills has only JavaScript and React, print('He is a front end developer'), 
+# -if the person skills has Node, Python, MongoDB, print('He is a backend developer'), 
+# -if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), 
+# -
+# else print('unknown title') - for more accurate results more conditions can be nested!
+#  If the person is married and if he lives in Finland, print the information in the following format:
+person={
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+        }
+    }
+
+# if 'skills' in person:
+#     print(person['skills'][2])
+# ---------------------------------
+# if 'skills' in person:
+#     if 'Python' in ['skills']:
+#         print('true')
+#     else:
+#         print('false')
+# -----------------------------------
+# person={
+#     'first_name': 'Asabeneh',
+#     'last_name': 'Yetayeh',
+#     'age': 250,
+#     'country': 'Finland',
+#     'is_married': True,
+#     'skills': ['JavaScript', 'React'],
+#     'address': {
+#         'street': 'Space street',
+#         'zipcode': '02210'
+#         }
+#     }
+
+# if 'JavaScript' and 'React' in person['skills']:
+#     print('He is a front end developer')
+# ------------------------------------------------
+
+# person={
+#     'first_name': 'Asabeneh',
+#     'last_name': 'Yetayeh',
+#     'age': 250,
+#     'country': 'Finland',
+#     'is_married': True,
+#     'skills': ['Node', 'MongoDB', 'Python'],
+#     'address': {
+#         'street': 'Space street',
+#         'zipcode': '02210'
+#         }
+#     }
+# if 'Node'and'Python'and 'MongoDB' in person['skills']:
+#     print('He is a backend developer')
+
+# ----------------------------------------------
+
+# person={
+#     'first_name': 'Asabeneh',
+#     'last_name': 'Yetayeh',
+#     'age': 250,
+#     'country': 'Finland',
+#     'is_married': True,
+#     'skills': ['React', 'Node', 'MongoDB'],
+#     'address': {
+#         'street': 'Space street',
+#         'zipcode': '02210'
+#         }
+#     }
+# if 'React'and 'Node'and 'MongoDB' in person['skills']:
+#     print('He is a fullstack developer')
+
+# ---------------------------------------------------------
+#  Asabeneh Yetayeh lives in Finland. He is married.
+if person['is_married'] == True and person['country'] == 'Finland':
+    print(person['first_name'], person['last_name'], "lives in", person['country'], '.', 'He is married.')
