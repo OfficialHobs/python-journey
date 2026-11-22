@@ -49,11 +49,11 @@
 # continue
 # With the continue statement we can skip the current iteration, and continue with the next:
 
-# count = 0
-# while count < 5: # while  count  is less than 5,
-#     if count == 3: #check -- if we have 3 as count, 
-#         count += 1 # increment  ---count = 4
-#         continue# and continue ----- i noticed is that of i comment out this line, it still gives same result
-#     print(count) # 0 1 2 4 
-#     count = count + 1      #    =5 from here loop ends 
-#     #  final output = 0 1 2 4
+count = 0
+while count < 5: # while  count  is less than 5,
+    if count == 3: #check -- if we have 3 as count, 
+        count += 1 # increment  ---count = 4
+        continue# and continue ----- i noticed is that of i comment out this line, it still gives same result
+    print(count) # 0 1 2 4 
+    count = count + 1      #    =5 from here loop ends 
+    #  final output = 0 1 2 4
